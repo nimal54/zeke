@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.2287b65c.css",
+    "main.css": "/zekeinternational/static/css/main.c6072859.css",
     "main.js": "/zekeinternational/static/js/main.b865ae84.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/banner2.png": "/zekeinternational/static/media/banner2.e93fb82f25534239b5f6.png",
     "index.html": "/zekeinternational/index.html",
-    "main.2287b65c.css.map": "/zekeinternational/static/css/main.2287b65c.css.map",
+    "main.c6072859.css.map": "/zekeinternational/static/css/main.c6072859.css.map",
     "main.b865ae84.js.map": "/zekeinternational/static/js/main.b865ae84.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2287b65c.css",
+    "static/css/main.c6072859.css",
     "static/js/main.b865ae84.js"
   ]
 }
