@@ -1,0 +1,19 @@
+.session_one_div{
+height: 70vh;
+width: 100%;
+}
+
+.hero_image{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.heading_widget{
+    display: table-cell;
+    justify-content: end;
+    text-align: center;
+    vertical-align: middle;
+
+}
