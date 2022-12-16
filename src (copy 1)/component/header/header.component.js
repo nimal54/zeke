@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import HomePage from "../../page/home.page";
+
 import * as constants from "../../utils/system.constant";
 
 const drawerWidth = 240;
@@ -97,7 +97,7 @@ function HeaderComponent() {
         </Drawer>
       </Box>
       <Typography>
-        <h3>&nbsp;</h3>
+        <h1></h1>
       </Typography>
     </Box>
   );

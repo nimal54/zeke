@@ -4,8 +4,6 @@ export const PRIMARY_COLOR = '#0B2742'
 export const SECONDARY_COLLOR = '#44EBA7'
 export const COMMON_COLOR = '#FFFFFF'
 
-// #222232;
-
 // font 
 export const DEFAULT_FONT = 'Poppins'
 

@@ -19,24 +19,19 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
   return (
-    <div style={{ overflowX: "hidden" }}>
-      <HeaderPage />
-      <HomePage />
-      <FooterPage />
-    </div>
-    // <Box sx={{ width: "100%" }}>
-    //   <Stack spacing={0}>
-    //     <Item>
-    //       <HeaderPage />
-    //     </Item>
-    //     <Item>
-    //       <HomePage />
-    //     </Item>
-    //     <Item>
-    //       <FooterPage />
-    //     </Item>
-    //   </Stack>
-    // </Box>
+    <Box sx={{ width: "100%" }}>
+      <Stack spacing={0}>
+        <Item>
+          <HeaderPage />
+        </Item>
+        <Item>
+          <HomePage />
+        </Item>
+        <Item>
+          <FooterPage />
+        </Item>
+      </Stack>
+    </Box>
   );
 }
 export default App;

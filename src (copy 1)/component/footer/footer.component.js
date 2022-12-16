@@ -13,7 +13,7 @@ const FooterComponent = () => {
     <React.Fragment>
       <div
         style={{
-          // bottom: 0,
+          bottom: 0,
           position: "absolute",
           width: "100%",
           color: constants.COMMON_COLOR,
