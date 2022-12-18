@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/zekeinternational/static/css/main.c71c6f02.css",
-    "main.js": "/zekeinternational/static/js/main.54f1ecca.js",
+    "main.js": "/zekeinternational/static/js/main.417948c7.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/heroImage.png": "/zekeinternational/static/media/heroImage.5436ec92454a174dd4d0.png",
     "index.html": "/zekeinternational/index.html",
     "main.c71c6f02.css.map": "/zekeinternational/static/css/main.c71c6f02.css.map",
-    "main.54f1ecca.js.map": "/zekeinternational/static/js/main.54f1ecca.js.map",
+    "main.417948c7.js.map": "/zekeinternational/static/js/main.417948c7.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c71c6f02.css",
-    "static/js/main.54f1ecca.js"
+    "static/js/main.417948c7.js"
   ]
 }
