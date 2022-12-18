@@ -15,14 +15,40 @@ const BenefitsComponent = () => {
     setCurrentCardId(temp);
   };
 
+  const findPercentage = () => {
+    var id = currentCardId;
+    if (id == 1) return 20;
+    else if (id == 2) return 40;
+    else if (id == 3) return 60;
+    else if (id == 4) return 80;
+    else if (id == 5) return 100;
+    else return 1;
+  };
+
   return (
-    <div
-      className="stepbystep"
-      style={{ textAlign: "center", maxHeight: window.innerWidth / 2 }}
-    >
-      <h2 style={{ color: "#0B2742" }}>Step by step to your dreams!</h2>
+    <div className="stepbystep" style={{ textAlign: "center" }}>
+      <h2>
+        Step by step to your dreams!{window.innerWidth}-{window.innerHeight}
+      </h2>
       <p>This is our journey to make your journey easy!!!</p>
-      <div>
+      <progress
+        id="file"
+        style={{ width: "70%", height: "10px", accentColor: "#4caf50" }}
+        value={findPercentage()}
+        max="100"
+      >
+        {" "}
+        {currentCardId}{" "}
+      </progress>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        {currentCardId >= 1 ? <h6> 1</h6> : ""}
+        {currentCardId >= 2 ? <h6> 2</h6> : ""}
+        {currentCardId >= 3 ? <h6> 3</h6> : ""}
+        {currentCardId >= 4 ? <h6> 4</h6> : ""}
+        {currentCardId >= 5 ? <h6> 5</h6> : ""}
+      </div>
+
+      <div className="cardsContainer">
         <ul class="cards">
           <li
             class={
@@ -39,8 +65,7 @@ const BenefitsComponent = () => {
               begin the admissions process by paying the required application
               cost.
             </h3>
-            <h2>Step 1</h2>
-            <button onClick={() => onClickCard()} className="button">
+            <button onClick={() => onClickCard()} className="morebutton">
               More
             </button>
           </li>
@@ -60,8 +85,7 @@ const BenefitsComponent = () => {
               must have a medical examination after paying fees, and we will
               assist in setting up an appointment.
             </h3>
-            <h2>Step 2</h2>
-            <button onClick={() => onClickCard()} className="button">
+            <button onClick={() => onClickCard()} className="morebutton">
               More
             </button>
           </li>
@@ -79,8 +103,7 @@ const BenefitsComponent = () => {
               there. The candidate will be given the bank account information,
               to which they must transfer the funds for any necessary costs.
             </h3>
-            <h2>Step 3</h2>
-            <button onClick={() => onClickCard()} className="button">
+            <button onClick={() => onClickCard()} className="morebutton">
               More
             </button>
           </li>
@@ -97,8 +120,7 @@ const BenefitsComponent = () => {
               SOP. We'll go over the SOP the student-produced and also offer
               writing assistance for one.
             </h3>
-            <h2>Step 4</h2>
-            <button onClick={() => onClickCard()} className="button">
+            <button onClick={() => onClickCard()} className="morebutton">
               More
             </button>
           </li>
@@ -118,8 +140,7 @@ const BenefitsComponent = () => {
               will then be sent for visa stamping. We will assist with all
               travel procedures after gaining visa clearance.
             </h3>
-            <h2>Step 5</h2>
-            <button onClick={() => onClickCard()} className="button">
+            <button onClick={() => onClickCard()} className="morebutton">
               More
             </button>
           </li>

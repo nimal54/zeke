@@ -7,55 +7,24 @@
   margin: 10% auto 0;
 }
 
-.stepbystep h2{
-  font-family: 'Poppins';
-  font-weight: bold;
-  font-size: 45px;
-  text-shadow: 2px 2px #44EBA7;
-}
-
-.stepbystep p{
-  font-family: 'Poppins';
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 2px 2px #44EBA7;
-}
-
-.cards li h3{
+.cards li h3 {
   font-weight: 300;
 }
-.cards li h2{
-  font-weight: 300;
-  font-size: x-large;
+.stepbystep{
+  padding-bottom:20%;
 }
 
-@media screen and (max-width: 920px) {
-  .stepbystep h2{
-    font-size:25px;
-    text-shadow: 1px 1px #44EBA7;
-  }
-  
-  .stepbystep p{
-    font-size: 10px;
-    text-shadow: 0.5px 0.5px #44EBA7;
-  }
-}
-
-
-.button {
-  background-color: #4CAF50; /* Green */
+.morebutton {
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
 }
-
 
 .card {
   position: absolute;
@@ -94,6 +63,123 @@
   background: #bbb;
 }
 
+.card--current {
+  cursor: auto;
+  user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: #eee;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+/* responsive */
+@media screen and (max-width: 920px) {
+  .cards {
+    max-width: 37em;
+    margin: 5% auto 0;
+  }
+  .cards li h3 {
+    font-weight: 300;
+  }
+  .cards li h2 {
+    font-weight: 300;
+    font-size: medium;
+  }
+
+  .stepbystep h2 {
+    font-size: 25px;
+    text-shadow: 1px 1px #44eba7;
+  }
+
+  .stepbystep p {
+    font-size: 10px;
+    text-shadow: 0.5px 0.5px #44eba7;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .cards {
+    max-width: fit-content;
+    margin: 5% auto 0;
+  }
+  .cardsContainer {
+    padding-inline: 3%;
+  }
+  .cards li h3 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #515365;
+  }
+
+  .stepbystep h2 {
+    font-size: 26px;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #2c2e38;
+    opacity: 1;
+  }
+
+  .morebutton {
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .stepbystep p {
+    font-size: 18px;
+    vertical-align: baseline;
+    line-height: 25px;
+    opacity: 1;
+    font-weight: 400;
+    color: #515365;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .cards {
+    max-width: 65em;
+    margin: 5% auto 0;
+  }
+  .cards li h3 {
+    font-weight: 300;
+  }
+  .cards li h2 {
+    font-weight: 300;
+    font-size: medium;
+  }
+
+  .stepbystep h2 {
+    font-size: 25px;
+    text-shadow: 1px 1px #44eba7;
+  }
+
+  .stepbystep p {
+    font-size: 10px;
+    text-shadow: 0.5px 0.5px #44eba7;
+  }
+}
+/* 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+ */
+
+/* animation */
+
 @keyframes card-out {
   0% {
     z-index: 20;
@@ -109,17 +195,3 @@
     transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
   }
 }
-
-.card--current {
-  cursor: auto;
-  user-select: auto;
-  position: relative;
-  z-index: 10;
-  opacity: 1;
-  background: #eee;
-  transform: rotate(-1deg) translateX(0%) scale(1);
-}
- 
- 
-
-
