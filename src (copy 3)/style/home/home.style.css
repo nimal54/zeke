@@ -1,0 +1,95 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero_heading:hover {
+  transition: scale(2, 2);
+}
+.headers{
+  z-index: 1;
+  display: flex;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  background-color: green;
+}
+.headers_button{
+  align-items: center;
+  display: flex;
+}
+.headers_button a{
+  padding: 10px;
+}
+
+.hero_heading {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  /* transform: translate(10%, 50%); */
+}
+
+.hero_heading h1 {
+  font-family: "Poppins";
+  font-size: xx-large;
+  color: white;
+  opacity: 1;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 920px) {
+  .hero_heading {
+    position: absolute;
+    justify-content: center;
+    transform: translate(-40%, -50%);
+  }
+  .hero_heading h1 {
+    font-size: 25px;
+  }
+}
+/* .content_center{
+    text-align: center;
+    width: 100%;
+}
+.hero_image{
+  object-fit: cover;
+  max-height: 640px;
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .hero_image{
+    object-fit: cover;
+    max-width: 60%;
+    max-height: 640px;
+    width: 100%;
+  }
+} */
+
+/* <main className="content_center">
+        <div className="session_one_div">
+          <img  className="hero_image" src={banner}></img>
+          <p>dd</p>
+        </div> */
+/* <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="140"
+              image={banner}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card> */
+/* </main> */

@@ -9,12 +9,3 @@ body {
 code {
   font-family:  "Poppins";
 }
-:root{
-  --primary_color:white;
-  --secondary_color:rgb(87, 151, 204);
-  --optional_color:#1abc9c;
-
-  --font_color:rgba(128, 128, 128, 0.781);
-  --font_color_header:rgba(255, 255, 255, 0.8);
-  --secondary_font_color:rgb(83, 83, 83);
-}

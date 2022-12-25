@@ -23,15 +23,15 @@ const App = () => {
       {/* <Divider/> */}
       <HomePage/>
       
-      <AboutPage/>
-      <ContactPage/>
+      {/* <AboutPage/> */}
+      {/* <ContactPage/> */}
       {/* <Switch>
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route path="*" component={HomePage} />
       </Switch> */}
-      <FooterPage />
+      {/* <FooterPage /> */}
     </React.Fragment>
   );
 };

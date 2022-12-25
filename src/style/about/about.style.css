@@ -1,0 +1,6 @@
+.about_main_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
