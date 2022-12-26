@@ -22,26 +22,31 @@ export const GMAIL_TAGLINES = ["Mail your musings!"];
 export const HOW_TO_GET_ZEKE = [
   {
     head: "She said... He said... They said…",
+    photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "No more confusion and second thoughts! She, He and They might go wrong, but we never go wrong!",
   },
   {
     head: "It’s all in your hands, literally!",
+    photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "The thing in your hand is a miracle. Get connected with us via all social media or you can just dial us right away!",
   },
   {
     head: "We’re a team now!",
+    photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "Now that we’re a squad it’s going to be teamwork. Together let us make this journey a wonderful experience.",
   },
   {
     head: "Yaaay! It’s Approved!",
+    photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "It's going to be a little long wait but we will never leave you until you get that passport stamped",
   },
   {
     head: "And then they flew away happily!",
+    photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "Like a mother bird makes their children fly away, we’ll watch you fly to your dreams.",
   },

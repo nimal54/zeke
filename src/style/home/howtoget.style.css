@@ -1,6 +1,6 @@
-.photo {
+/* .photo {
   background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg);
-}
+} */
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   transition: transform 1s;
 }

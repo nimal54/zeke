@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../style/home/howtoget.style.css";
+import img11 from '../../assets/home/hm1.jpg'
 import * as contents from "../../utils/content.collections";
 
 const HowToGetComponent = () => {
@@ -20,7 +21,7 @@ const HowToGetComponent = () => {
         isTrue(index) ? (
           <div class="blog-card">
             <div class="meta">
-              <div class="photo"></div>
+              <div class="photo" style={{backgroundImage: `url(${img11})`}}></div>
               <ul class="details"></ul>
             </div>
             <div class="description">
@@ -41,29 +42,12 @@ const HowToGetComponent = () => {
               </p>
             </div>
             <div class="meta">
-              <div class="photo"></div>
+              <div class="photo" style={{backgroundImage: `url(${img11})`}}></div>
               <ul class="details"></ul>
             </div>
           </div>
         )
       )}
-      {/* <div class="blog-card">
-        <div class="meta">
-          <div class="photo"></div>
-          <ul class="details"></ul>
-        </div>
-        <div class="description">
-          <h1>She said... He said... They said…</h1>
-          <p>
-            {" "}
-            No more confusion and second thoughts! She, He and They might go
-            wrong, but we never go wrong!
-          </p>
-          <p class="read-more">
-            <a href="#">Join Us</a>
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };
