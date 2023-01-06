@@ -7,18 +7,27 @@ import { Divider, Switch } from "@mui/material";
 import HeroComponent from "./hero.component";
 import BenefitsComponent from "./benefits.component";
 import HowToGetComponent from "./howtoget.component";
+import PartTimeCalculator from "./parttimecalculator.component";
+import SOPComponent from "./sop.component";
+
 const HomeComponent = () => {
   return (
     <div>
       {/* hero content  */}
       <HeroComponent />
-      
-      <Divider/>
+
       {/* benefits content */}
       <BenefitsComponent />
 
+      {/* SOP  */}
+      <SOPComponent />
+
+      {/* part time calculator  */}
+      <PartTimeCalculator />
+
+
       {/* how to get  */}
-      <HowToGetComponent />
+      {/* <HowToGetComponent /> */}
     </div>
   );
 };

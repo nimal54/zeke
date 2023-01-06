@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import "../../style/home/home.style.css";
 import banner from "../../assets/home/heroImage.jpg";
 
@@ -32,16 +32,16 @@ const HeroComponent = () => {
         <div className="menu">
           <ul className="list">
             <li>
-              <a href="#">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="#">Blogs</a>
+              <a href="/blog">Blogs</a>
             </li>
           </ul>
         </div>

@@ -15,13 +15,14 @@ const FooterComponent = () => {
         style={{
           // bottom: 0,
           // position: "absolute",
+          // placeItems:'center',
           width: "100%",
           color: constants.COMMON_COLOR,
         }}
       >
         <div
           class="footer_container"
-          style={{ backgroundColor: constants.PRIMARY_COLOR }}
+          style={{ backgroundColor: constants.PRIMARY_COLOR,placeItems:'center' }}
         >
           {/* left  */}
           <div class="footer-left">

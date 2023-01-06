@@ -51,3 +51,23 @@ export const HOW_TO_GET_ZEKE = [
       "Like a mother bird makes their children fly away, we’ll watch you fly to your dreams.",
   },
 ];
+
+
+//country and currency object
+export const COUNTRY_AND_CURRENCY = [
+  {
+    country:"United Kingdom UK",
+    currency:"Pound",
+    currencyValue:"99.14"
+  },
+  {
+    country:"New Zealand NZ",
+    currency:"NZ Dollar",
+    currencyValue:"51.75"
+  },
+  {
+    country:"Australia AU",
+    currency:"AU Dollar",
+    currencyValue:"56"
+  }
+]

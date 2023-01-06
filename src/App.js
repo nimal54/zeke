@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import HeaderPage from "./page/header.page";
 import FooterPage from "./page/footer.page";
@@ -18,21 +18,27 @@ import { Divider, Switch } from "@mui/material";
 
 const App = () => {
   return (
-    <React.Fragment>
-      {/* <HeaderPage /> */}
-      {/* <Divider/> */}
-      <HomePage/>
-      
-      {/* <AboutPage/> */}
-      {/* <ContactPage/> */}
-      {/* <Switch>
-        <Route exact path="/home" component={HomePage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/contact" component={ContactPage} />
-        <Route path="*" component={HomePage} />
-      </Switch> */}
-      {/* <FooterPage /> */}
-    </React.Fragment>
+    <Router>
+      {/* <div className="App">
+        <ul className="App-header">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul> */}
+        <Routes>
+          <Route exact path="/" element={<HomePage />}></Route>
+          <Route exact path="/about" element={<AboutPage />}></Route>
+          <Route exact path="/contact" element={<ContactPage />}></Route>
+        </Routes>
+        <FooterPage/>
+      {/* </div> */}
+    </Router>
   );
 };
 export default App;
