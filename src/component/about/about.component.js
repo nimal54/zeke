@@ -1,13 +1,22 @@
 import React from "react";
 import "../../style/about/about.style.css";
-import * as constants from "../../utils/system.constant";
-import about_illustration from '../../assets/about/about_illustration.jpg'
+import about_illustration from "../../assets/about/about_illustration.jpg";
 
 const AboutComponent = () => {
   return (
     <React.Fragment>
       <div className="about_main_div">
-        <div className="about_session1" style={{width:window.innerWidth/2}}>
+        {window.innerWidth < 800 ? (
+          <div className="about_session2">
+            <img src={about_illustration}></img>
+          </div>
+        ) : (
+          ""
+        )}
+        <div
+          className="about_session1"
+          style={{ width: window.innerWidth > 400 ? "62%" : "100%" }}
+        >
           <h1>About Us</h1>
           <p>
             Hi there! Are you ready for the new adventure you’re gonna make?
@@ -67,14 +76,18 @@ const AboutComponent = () => {
           </ul>
 
           <h2>
-            So that is what we are, and if you don’t mind{" "}
-            <strong>“Can we help you?”</strong>
+            So that is what we are, and if you don’t mind,{" "}
+            <strong style={{color:"#1abc9c"}}>Can we help you?</strong>
           </h2>
         </div>
 
-        <div className="about_session2" >
-          <img style={{width:'300px', height:'250px'}} src={about_illustration}></img>
-        </div>
+        {window.innerWidth > 800 ? (
+          <div className="about_session2">
+            <img src={about_illustration}></img>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </React.Fragment>
   );

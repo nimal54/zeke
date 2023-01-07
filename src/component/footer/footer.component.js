@@ -1,8 +1,6 @@
 import React from "react";
 import "../../style/footer/footer.style.css";
 import * as constants from "../../utils/system.constant";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 import Divider from '@mui/material/Divider';
 
 import Button from "@mui/material/Button";
@@ -16,7 +14,6 @@ const FooterComponent = () => {
           // bottom: 0,
           // position: "absolute",
           // placeItems:'center',
-          width: "100%",
           color: constants.COMMON_COLOR,
         }}
       >
@@ -41,8 +38,16 @@ const FooterComponent = () => {
 
           <div class="footer-center">
             <p>Connect with us</p>
+            <div class="social-menu">
+        <ul>
+            <li><a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://codepen.io/sanketbodke"><i class="fab fa-codepen" target="blank"></i></a></li>
+        </ul>
+    </div>
 
-            <div>
+            {/* <div>
               <Button>
                 <i class="fa fa-facebook"></i>
               </Button>
@@ -62,12 +67,12 @@ const FooterComponent = () => {
               <Button>
                 <i class="fa fa-envelope"></i>
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* right  */}
           <div class="footer-right">
-            <MinimalEmailSubscribeStyle/>
+            {/* <MinimalEmailSubscribeStyle/> */}
             {/* <Box
               sx={{
                 width: 500,

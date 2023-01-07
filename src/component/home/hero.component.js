@@ -8,9 +8,7 @@ import Sheet from "@mui/joy/Sheet";
 
 import * as contents from "../../utils/content.collections";
 
-const slidebar_config = () => {
-  // className={`${isSlideBar ? 'selected' : ''}`}
-};
+
 
 const HeroComponent = () => {
   var headingIndex = 0;

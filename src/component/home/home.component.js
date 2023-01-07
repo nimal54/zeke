@@ -27,7 +27,7 @@ const HomeComponent = () => {
 
 
       {/* how to get  */}
-      {/* <HowToGetComponent /> */}
+      <HowToGetComponent />
     </div>
   );
 };

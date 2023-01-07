@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
 
 .logo {
   font-size: x-large;
-  color: grey;
+  color: var(--header_companylabel_color);
   font-weight: 800;
 }
 .list {

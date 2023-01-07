@@ -16,8 +16,8 @@ const SOPComponent = () => {
           <input type="text" placeholder="Course"></input>
           <input type="text" placeholder="Intake"></input>
         </div>
-        <div className="screen_joinus">
-          <div className="joinus">
+        <div className="screen_meetus">
+          <div className="meetus">
             <button>Join with Gmail</button>
             <button>Join with Whatsapp</button>
           </div>
