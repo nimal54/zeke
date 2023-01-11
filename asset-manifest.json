@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.df2e4285.css",
+    "main.css": "/zekeinternational/static/css/main.967fd85a.css",
     "main.js": "/zekeinternational/static/js/main.0620212b.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/about_illustration.jpg": "/zekeinternational/static/media/about_illustration.b17918785042d0e6e6c5.jpg",
@@ -9,12 +9,12 @@
     "static/media/1.jpg": "/zekeinternational/static/media/1.214643ea76b1a5cbf6a8.jpg",
     "static/media/0.jpg": "/zekeinternational/static/media/0.d60fce554fd16907c9d3.jpg",
     "index.html": "/zekeinternational/index.html",
-    "main.df2e4285.css.map": "/zekeinternational/static/css/main.df2e4285.css.map",
+    "main.967fd85a.css.map": "/zekeinternational/static/css/main.967fd85a.css.map",
     "main.0620212b.js.map": "/zekeinternational/static/js/main.0620212b.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df2e4285.css",
+    "static/css/main.967fd85a.css",
     "static/js/main.0620212b.js"
   ]
 }
