@@ -65,7 +65,7 @@
   font-weight: normal;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
 
 	.footer-left, .footer-center, .footer-right, .footer_container{
 		display: block;

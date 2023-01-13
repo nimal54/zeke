@@ -5,18 +5,35 @@ import FooterPage from "./page/footer.page";
 import HomePage from "./page/home.page";
 import AboutPage from "./page/about.page";
 import ContactPage from "./page/contact.page";
+import Newsletters from "./utils/module/newsletters";
+import Testimonial from "./utils/module/testimonial"
+import HeaderPage from "./page/header.page";
+import { Divider } from "@mui/material";
 
 const App = () => {
   return (
-    // <div> <AboutPage /> <FooterPage /></div>
-    // <div> <AboutPage /></div>
-    <Router>
-    <Routes>
-      <Route exact path="/" element={ <div> <HomePage /> <FooterPage /></div> }></Route>
-      <Route exact path="zekeinternational/about" element={ <div> <AboutPage /> <FooterPage /></div>} ></Route>
-      <Route exact path="zekeinternational/contact" element={<div> <ContactPage /> <FooterPage /></div>}></Route>
-    </Routes>
-  </Router>
+    <div>
+      <HeaderPage/>
+      <Divider/>
+      <HomePage/>
+      
+      {/* <AboutPage /> */}
+      {/* <ContactPage /> */}
+      {/* <Newsletters/> */}
+      <Testimonial/>
+      <FooterPage/>
+
+    </div>
+    // <Router>
+    //   <HeaderPage />
+    //   <Divider />
+    //   <Routes>
+    //     <Route exact path="/" element={<HomePage />}></Route>
+    //     <Route exact path="/about" element={<AboutPage />}></Route>
+    //     <Route exact path="/contact" element={<ContactPage />}></Route>
+    //   </Routes>
+    //   <FooterPage />
+    // </Router>
   );
 };
 export default App;

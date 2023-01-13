@@ -22,12 +22,14 @@ const HomeComponent = () => {
       {/* SOP  */}
       <SOPComponent />
 
-      {/* part time calculator  */}
-      <PartTimeCalculator />
-
 
       {/* how to get  */}
       <HowToGetComponent />
+
+       {/* part time calculator  */}
+       <PartTimeCalculator />
+
+       
     </div>
   );
 };

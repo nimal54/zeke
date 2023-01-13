@@ -56,18 +56,62 @@ export const HOW_TO_GET_ZEKE = [
 //country and currency object
 export const COUNTRY_AND_CURRENCY = [
   {
-    country:"United Kingdom UK",
-    currency:"Pound",
-    currencyValue:"99.14"
+    country: "United Kingdom UK",
+    joblist: [{ "name": "Warehouse1", "pay": "120" }, { "name": "Petrol Pumb Operator1", "pay": "100" }, { "name": "Shopkeeper1", "pay": "80" }],
+    currency: "Pound",
+    currencyValue: "99.14"
   },
   {
-    country:"New Zealand NZ",
-    currency:"NZ Dollar",
-    currencyValue:"51.75"
+    country: "New Zealand NZ",
+    joblist: [{ "name": "Warehouse2", "pay": "120" }, { "name": "Petrol Pumb Operator2", "pay": "100" }, { "name": "Shopkeeper2", "pay": "80" }],
+    currency: "NZ Dollar",
+    currencyValue: "51.75"
   },
   {
-    country:"Australia AU",
-    currency:"AU Dollar",
-    currencyValue:"56"
+    country: "Australia AU",
+    joblist: [{ "name": "Warehouse3", "pay": "120" }, { "name": "Petrol Pumb Operator3", "pay": "100" }, { "name": "Shopkeeper3", "pay": "80" }],
+    currency: "AU Dollar",
+    currencyValue: "56"
   }
 ]
+
+
+//testimonial content
+export const TESTIMONIAL_CONTENT = [
+  {
+    client: "0",
+    photo_path: "../../assets/testimonial/avatar1.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry... Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    client: "1",
+    photo_path: "../../assets/testimonial/avatar2.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    client: "2",
+    photo_path: "../../assets/testimonial/avatar3.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing sfsdgfsand typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    client: "3",
+    photo_path: "../../assets/testimonial/avatar4.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    client: "4",
+    photo_path: "../../assets/testimonial/avatar5.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    client: "5",
+    photo_path: "../../assets/testimonial/avatar3.png",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sdd,",
+  }
+];

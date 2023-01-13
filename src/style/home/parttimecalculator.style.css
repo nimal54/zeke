@@ -2,7 +2,7 @@
   padding-top: 2%;
 	box-shadow: -10px -10px 20px rgb(255, 255, 255),
     10px 10px 20px rgba(0, 0, 0, 0.4);
-  margin: 2%;
+  margin: 5%;
   padding-bottom: 2%;
 }
 .h2 {
@@ -74,4 +74,24 @@ textarea {
   border-radius: 50%;
   background: #04aa6d;
   cursor: pointer;
+}
+
+.result img{
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+}
+@media screen and (max-width: 415px) {
+
+  .h2 {
+    font-size: small;
+  }
+  .result h2{
+    font-size: medium;
+  }
+  .result img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+  }
 }
