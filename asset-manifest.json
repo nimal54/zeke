@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.c64fca87.css",
-    "main.js": "/zekeinternational/static/js/main.be8c9e5b.js",
+    "main.css": "/zekeinternational/static/css/main.33a73442.css",
+    "main.js": "/zekeinternational/static/js/main.911ddd34.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/about_illustration.jpg": "/zekeinternational/static/media/about_illustration.b17918785042d0e6e6c5.jpg",
     "static/media/earn.jpg": "/zekeinternational/static/media/earn.d70c03ff21a84e1e73e0.jpg",
@@ -9,12 +9,12 @@
     "static/media/1.jpg": "/zekeinternational/static/media/1.214643ea76b1a5cbf6a8.jpg",
     "static/media/0.jpg": "/zekeinternational/static/media/0.d60fce554fd16907c9d3.jpg",
     "index.html": "/zekeinternational/index.html",
-    "main.c64fca87.css.map": "/zekeinternational/static/css/main.c64fca87.css.map",
-    "main.be8c9e5b.js.map": "/zekeinternational/static/js/main.be8c9e5b.js.map",
+    "main.33a73442.css.map": "/zekeinternational/static/css/main.33a73442.css.map",
+    "main.911ddd34.js.map": "/zekeinternational/static/js/main.911ddd34.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c64fca87.css",
-    "static/js/main.be8c9e5b.js"
+    "static/css/main.33a73442.css",
+    "static/js/main.911ddd34.js"
   ]
 }
