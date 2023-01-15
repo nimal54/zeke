@@ -20,8 +20,8 @@ function HeaderComponent() {
           &times;
         </a>
         <a  href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blogs</a>
+        <a href="localhost:3000/about">About</a>
+        {/* <a href="/blog">Blogs</a> */}
         <a href="/contact">Contact</a>
       </div>
       <h1 href="#" className="logo">

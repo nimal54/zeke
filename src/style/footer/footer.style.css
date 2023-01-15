@@ -111,7 +111,7 @@
   font-weight: normal;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
 
 	.footer-left, .footer-center, .footer-right, .footer_container{
 		display: block;

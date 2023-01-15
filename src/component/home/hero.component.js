@@ -1,42 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "../../style/home/home.style.css";
 import banner from "../../assets/home/heroImage.jpg";
 
-
 import * as contents from "../../utils/content.collections";
 
-// const HeaderComponent = () => {
-//   return(
-//     <div>
-//       <nav className="navbar">
-//         <h1 href="#" className="logo">
-//           Zeke international
-//         </h1>
-//         <input type="checkbox" id="toggler"></input>
-//         <label for="toggler">
-//           <i className="gg-menu"></i>
-//         </label>
-//         <div className="menu">
-//           <ul className="list">
-//             <li>
-//               <a href="/home">Home</a>
-//             </li>
-//             <li>
-//               <a href="/contact">Contact</a>
-//             </li>
-//             <li>
-//               <a href="/about">About</a>
-//             </li>
-//             <li>
-//               <a href="/blog">Blogs</a>
-//             </li>
-//           </ul>
-//         </div>
-//       </nav>
-//     </div>
-//   )
-// }
+
+// import * as contents from "../../utils/content.collections";
+
 
 const HeroComponent = () => {
   var headingIndex = 0;
@@ -44,6 +15,29 @@ const HeroComponent = () => {
   headingIndex = Math.floor(Math.random() * arrayLength);
 
   const [isSlideBar, setIsSlideBar] = useState(false);
+
+  const receiverEmail = ""
+  const ccReceiverEmail = ""
+  const bccReceiverEmail = ""
+  const emailSubject = "Enqiury"
+  const emailBody = "Hello Zeke, I like to know more about you. please reach out me asap!!!"
+
+  const sendEmail = () => {
+    var emailrequest = "https://mail.google.com/mail/?view=cm&fs=1&to=" + receiverEmail + "&cc=" + ccReceiverEmail + "&su=" + emailSubject + "&body=" + emailBody
+    window.open(emailrequest, '_blank');
+  }
+
+  const sendToWhatsapp = () => {
+    var sendTo = "+919656119814"
+    var messageBody = "Hello Zeke, I like to know more about you. please reach out me asap!!! "
+    var sendRequest = "https://wa.me/" + sendTo + "/?text=" + messageBody
+    window.open(sendRequest, '_blank')
+  }
+
+  const clicking = () =>{
+    let path  = window.location.pathname;
+console.log(path);
+  }
 
   return (
     <div>
@@ -55,15 +49,17 @@ const HeroComponent = () => {
         }}
       >
         <div class="hero-text">
-          <h1>{contents.HERO_HEADINGS[headingIndex]}</h1>
+          <h1 className="typewriter">{contents.HERO_HEADINGS[headingIndex]}</h1>
           <p>{contents.SUBLINES}</p>
+          {/* <button onClick={((e)=>clicking())}></button> */}
           <div className="joinus">
-            <button>Join with Gmail</button>
-            <button>Join with Whatsapp</button>
+            <button onClick={(e) => sendEmail()}  >Join with Gmail</button>
+            <button onClick={(e) => sendToWhatsapp()}>Join with Whatsapp</button>
           </div>
         </div>
       </div>
     </div>
   );
 };
-export  default HeroComponent;
+export default HeroComponent;
+
