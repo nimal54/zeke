@@ -2,8 +2,16 @@ import React, { useEffect, useState } from "react";
 
 import "../../style/header/header.style.css";
 
-function HeaderComponent() {
+function HeaderComponent(props) {
   const [slidebar, setSlidebar] = useState(false);
+  const [slidebarWidth, setSlidebarWidth] = useState("0%")
+
+
+  const eventRouter = (path) => {
+    console.log(path);
+    props.setPathInfo(path)
+    setSlidebar(slidebar ? false : true)
+  }
 
   return (
     <div>
@@ -15,14 +23,14 @@ function HeaderComponent() {
         <a
           href="javascript:void(0)"
           class="closebtn"
-          onClick={() => setSlidebar(slidebar ? false : true)}
+          onClick={(e) => setSlidebar(slidebar ? false : true)}
         >
           &times;
         </a>
-        <a  href="/home">Home</a>
-        <a href="/about">About</a>
-        {/* <a href="/blog">Blogs</a> */}
-        <a href="/contact">Contact</a>
+        <a onClick={(e) => eventRouter("home")}>Home</a>
+        <a onClick={(e) => eventRouter("about")} >About</a>
+        <a onClick={(e) => eventRouter("blog")} >Blogs</a>
+        <a onClick={(e) => eventRouter("contact")}>Contact</a>
       </div>
       <h1 href="#" className="logo">
         <span

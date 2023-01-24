@@ -4,6 +4,7 @@ import "../../style/home/parttimecalculator.style.css";
 import earn_illustration from "../../assets/home/earn.jpg";
 import * as contents from "../../utils/content.collections";
 
+
 const PartTimeCalculator = () => {
 	var coun_list = contents.COUNTRY_AND_CURRENCY;
 	const [countryDetails, setCountryDetails] = useState({});
@@ -63,12 +64,12 @@ const PartTimeCalculator = () => {
 					<div className="calcu_summary_block">
 						<div className="result">
 							<img
-								
+
 								src={earn_illustration}
 							></img>
 							<h2>
 								Total Amount you get <br />{" "}
-								<span style={{ color: "green" }}>{paymentForSelectedJob*partTimeHour} ₹/ hr</span>
+								<span style={{ color: "green" }}>{paymentForSelectedJob * partTimeHour} ₹/ hr</span>
 							</h2>
 						</div>
 					</div>

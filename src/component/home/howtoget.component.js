@@ -26,7 +26,11 @@ const HowToGetComponent = () => {
     <div>
       <div className="howtoget">
         <h3 className="howtogettitle ">How to get Zeke ?</h3>
-        <p>This is our journey to make your journey easy!!</p>
+        <center>
+          <h4 style={{color:"grey"}}>Fly the Zeke way!!! How we help you to make the journey easy.</h4>
+        </center>
+        <br/><br/>
+
         {window.innerWidth > 450 ? (
           <div className="howtoget_contentdiv">
             {contents.HOW_TO_GET_ZEKE.map((data, index) =>

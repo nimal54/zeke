@@ -8,37 +8,59 @@ import ContactPage from "./page/contact.page";
 import Newsletters from "./utils/module/newsletters";
 import Testimonial from "./utils/module/testimonial";
 import HeaderPage from "./page/header.page";
+import BlogPage from "./page/blog.page"
 import { Divider } from "@mui/material";
 
 const App = () => {
   const [pathInfo, setPathInfo] = useState("home");
 
-  useEffect(() => {
-    let path = window.location.pathname;
-    if (path.includes("home")) {
-      setPathInfo("home")
-    } else if (path.includes("about")) {
-      setPathInfo("about")
-    } else if (path.includes("contact")) {
-      setPathInfo("contact")
-    } else {
-      setPathInfo("")
-    }
-  }, [])
+
 
   return (
-    // <div>
-    //   <HeaderPage/>
-    //   <Divider/>
-    //   <HomePage/>
 
-    //   <AboutPage />
-    //   <ContactPage />
-    //   <Newsletters/>
-    //   <Testimonial/>
-    //   <FooterPage/>
 
-    // </div>
+    <div>
+      {pathInfo === "home" ? (
+        <div>
+          <HeaderPage setPathInfo={setPathInfo} />
+          <HomePage />
+          <Testimonial />
+          <FooterPage />
+        </div>
+      ) : pathInfo === "about" ? (
+        <div>
+          <HeaderPage setPathInfo={setPathInfo} />
+          <AboutPage />
+          <FooterPage />
+        </div>
+      ) : pathInfo === "contact" ? (
+        <div>
+          <HeaderPage setPathInfo={setPathInfo} />
+          <ContactPage />
+          <FooterPage />
+        </div>
+      ) : pathInfo === "blog" ? (
+        <div>
+          <HeaderPage setPathInfo={setPathInfo} />
+          <BlogPage />
+          <FooterPage />
+        </div>
+      ) : (
+        <div>
+          <center>
+            <medium className="bounsing_errormsg">Thanks for choosing <span style={{ color: "blue", fontWeight: "bold" }}>Zeke</span> !!! <br />Please check url</medium>
+          </center>
+        </div>
+      )}
+    </div>
+  );
+};
+export default App;
+
+
+
+
+// </div>
     // <Router>
     //   <HeaderPage />
     //   <Divider />
@@ -59,33 +81,3 @@ const App = () => {
     //     </Route>
     //   </Routes>
     // </BrowserRouter>
-    <div>
-      {pathInfo === "home" ? (
-        <div>
-          <HeaderPage />
-          <HomePage />
-          <FooterPage />
-        </div>
-      ) : pathInfo === "about" ? (
-        <div>
-          <HeaderPage />
-          <AboutPage />
-          <FooterPage />
-        </div>
-      ) : pathInfo === "contact" ? (
-        <div>
-          <HeaderPage />
-          <ContactPage />
-          <FooterPage />
-        </div>
-      ) : (
-        <div>
-          <center>
-            <medium className="bounsing_errormsg">Thanks for choosing <span style={{ color: "blue", fontWeight: "bold" }}>Zeke</span> !!! <br />Please check url</medium>
-          </center>
-        </div>
-      )}
-    </div>
-  );
-};
-export default App;

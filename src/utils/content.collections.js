@@ -62,24 +62,26 @@ export const HOW_TO_GET_ZEKE = [
 export const COUNTRY_AND_CURRENCY = [
   {
     country: "United Kingdom UK",
-    joblist: [{ "name": "Warehouse1", "pay": "120" }, { "name": "Petrol Pumb Operator1", "pay": "100" }, { "name": "Shopkeeper1", "pay": "80" }],
+    joblist: [{ "name": "Pump operator", "pay": "17.5" }, { "name": "Shopkeeper", "pay": "11.42" }, 
+    { "name": "Cleaning", "pay": "10.64" }, { "name": "Warehouse", "pay": "12.65" }, { "name": "House moving", "pay": "12.07" }, { "name": "Car wash", "pay": "13.08" }, { "name": "Restaurant waiter/ kitchen hand", "pay": "9.60" }],
     currency: "Pound",
     currencyValue: "99.14"
   },
   {
     country: "New Zealand NZ",
-    joblist: [{ "name": "Warehouse2", "pay": "120" }, { "name": "Petrol Pumb Operator2", "pay": "100" }, { "name": "Shopkeeper2", "pay": "80" }],
+    joblist: [{ "name": "Console Operator/ Pump Operator", "pay": "22" }, { "name": "Shopkeeper", "pay": "22" }, { "name": "Cleaning", "pay": "25" }, { "name": "Warehouse", "pay": "22" }, { "name": "House Moving", "pay": "27" }, { "name": "Carwash", "pay": "21" },
+    { "name": "Restaurant waiter/ kitchen hand", "pay": "22" }],
     currency: "NZ Dollar",
     currencyValue: "51.75"
   },
   {
     country: "Australia AU",
-    joblist: [{ "name": "Warehouse3", "pay": "120" }, { "name": "Petrol Pumb Operator3", "pay": "100" }, { "name": "Shopkeeper3", "pay": "80" }],
+    joblist: [{ "name": "Console Operator/ Pump Operator", "pay": "20" }, { "name": "Shopkeeper", "pay": "23" }, { "name": "Cleaning", "pay": "26" }, { "name": "Warehouse", "pay": "20" }, { "name": "House Moving", "pay": "28" }, { "name": "Carwash", "pay": "20" },
+    { "name": "Restaurant waiter/ kitchen hand", "pay": "24" }],
     currency: "AU Dollar",
     currencyValue: "56"
   }
 ]
-
 
 //testimonial content
 export const TESTIMONIAL_CONTENT = [
@@ -142,4 +144,51 @@ export const SOCIALMEDIAURL = [
     "media":"linkedin",
     "url":"https://www.linkedin.com/in/nimal-viju-3503a4176/"
   }
+]
+
+
+
+export const BLOGCONTENT = [
+  {
+    "media":"Facebook",
+    "imagepath":"../../assets/testimonial/avatar2.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
+  {
+    "media":"Instagram",
+    "imagepath":"../../assets/testimonial/avatar1.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
+  {
+    "media":"Web",
+    "imagepath":"../../assets/testimonial/avatar4.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
+  {
+    "media":"Medium",
+    "imagepath":"../../assets/testimonial/avatar2.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
+  {
+    "media":"Newspaper",
+    "imagepath":"../../assets/testimonial/avatar3.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
+  {
+    "media":"Twitter",
+    "imagepath":"../../assets/testimonial/avatar1.png",
+    "heading":"And then they flew away happily!",
+    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+  },
 ]

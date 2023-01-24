@@ -9,6 +9,9 @@ import BenefitsComponent from "./benefits.component";
 import HowToGetComponent from "./howtoget.component";
 import PartTimeCalculator from "./parttimecalculator.component";
 import SOPComponent from "./sop.component";
+import BlogBannerComponent from "./blogbanner.component";
+import CountryListBannerComponent from "../country/countryListbanner.component"
+
 
 const HomeComponent = () => {
   return (
@@ -26,10 +29,18 @@ const HomeComponent = () => {
       {/* how to get  */}
       <HowToGetComponent />
 
-       {/* part time calculator  */}
-       <PartTimeCalculator />
+      {/* CountryListBannerComponent */}
+      <CountryListBannerComponent />
 
-       
+      {/* part time calculator  */}
+      <PartTimeCalculator />
+
+      {/* blog banner  */}
+      <BlogBannerComponent />
+
+
+
+
     </div>
   );
 };

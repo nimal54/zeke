@@ -61,11 +61,10 @@ const SOPComponent = () => {
   return (
     <div className="screen">
       <div className="innerscreen">
-        <h2>It’s okay! We’ve it all sorted!</h2>
-        <small>
-          We help you choose the right course, in the right college/university!
-          Doing it right is what we do!
-        </small>
+        <h2>Are you stuck at SOP ?</h2>
+        <p>
+          We help you write SOPs that never get rejected. If you want your SOPs to stand out, we’re there!
+        </p>
         <div class="login">
           <input value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Country"></input>
           <input value={data.course} onChange={(e) => saveInputDataToData("course", e.target.value)} type="text" placeholder="Course"></input>
