@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.38ac717d.css",
-    "main.js": "/zekeinternational/static/js/main.98945c33.js",
+    "main.css": "/zekeinternational/static/css/main.addd46c4.css",
+    "main.js": "/zekeinternational/static/js/main.a51381f8.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/about_illustration.jpg": "/zekeinternational/static/media/about_illustration.b17918785042d0e6e6c5.jpg",
     "static/media/earn.jpg": "/zekeinternational/static/media/earn.d70c03ff21a84e1e73e0.jpg",
     "static/media/heroImage.jpg": "/zekeinternational/static/media/heroImage.5436ec92454a174dd4d0.jpg",
     "static/media/1.jpg": "/zekeinternational/static/media/1.214643ea76b1a5cbf6a8.jpg",
     "static/media/0.jpg": "/zekeinternational/static/media/0.d60fce554fd16907c9d3.jpg",
+    "static/media/aus_cover.jpg": "/zekeinternational/static/media/aus_cover.18b28566443ddbe58550.jpg",
+    "static/media/sw_cover.jpg": "/zekeinternational/static/media/sw_cover.2a3510f6a35eb67c4448.jpg",
+    "static/media/uk_cover.jpg": "/zekeinternational/static/media/uk_cover.187ff3eeb0a611967a7e.jpg",
+    "static/media/nz_cover.jpg": "/zekeinternational/static/media/nz_cover.256a9a75ba9988361df7.jpg",
+    "static/media/canada_cover.jpg": "/zekeinternational/static/media/canada_cover.fc2256665aa12ab25cee.jpg",
+    "static/media/gn_cover.jpg": "/zekeinternational/static/media/gn_cover.d9377eefb6c62ca90e82.jpg",
+    "static/media/nz_flag.jpg": "/zekeinternational/static/media/nz_flag.b4e8b2f8121c85f3fd57.jpg",
+    "static/media/sw_flag.jpg": "/zekeinternational/static/media/sw_flag.47a0f01c9865e0f9ad1b.jpg",
+    "static/media/gn_flag.jpg": "/zekeinternational/static/media/gn_flag.713d0cc0c7b07d1acad9.jpg",
     "index.html": "/zekeinternational/index.html",
-    "main.38ac717d.css.map": "/zekeinternational/static/css/main.38ac717d.css.map",
-    "main.98945c33.js.map": "/zekeinternational/static/js/main.98945c33.js.map",
+    "main.addd46c4.css.map": "/zekeinternational/static/css/main.addd46c4.css.map",
+    "main.a51381f8.js.map": "/zekeinternational/static/js/main.a51381f8.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ac717d.css",
-    "static/js/main.98945c33.js"
+    "static/css/main.addd46c4.css",
+    "static/js/main.a51381f8.js"
   ]
 }
