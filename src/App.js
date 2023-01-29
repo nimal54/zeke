@@ -10,6 +10,8 @@ import Testimonial from "./utils/module/testimonial";
 import HeaderPage from "./page/header.page";
 import BlogPage from "./page/blog.page"
 import { Divider } from "@mui/material";
+import CountryListBannerComponent from "./component/country/countryListbanner.component";
+import HeaderAndHeroComponent from "./component/home/header.and.herocomponent";
 
 const App = () => {
   const [pathInfo, setPathInfo] = useState("home");
@@ -22,27 +24,31 @@ const App = () => {
     <div>
       {pathInfo === "home" ? (
         <div>
-          <HeaderPage setPathInfo={setPathInfo} />
-          <HomePage />
+          {/* hero content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <HomePage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <Testimonial />
           <FooterPage />
         </div>
       ) : pathInfo === "about" ? (
         <div>
-          <HeaderPage setPathInfo={setPathInfo} />
-          <AboutPage />
+          {/* hero content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <AboutPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : pathInfo === "contact" ? (
         <div>
-          <HeaderPage setPathInfo={setPathInfo} />
-          <ContactPage />
+          {/* hero content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <ContactPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : pathInfo === "blog" ? (
         <div>
-          <HeaderPage setPathInfo={setPathInfo} />
-          <BlogPage />
+          {/* hero content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <BlogPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : (
@@ -56,28 +62,3 @@ const App = () => {
   );
 };
 export default App;
-
-
-
-
-// </div>
-    // <Router>
-    //   <HeaderPage />
-    //   <Divider />
-    //   <Routes>
-    //     <Route exact path="/" element={<HomePage />}></Route>
-    //     <Route exact path="/about" element={<AboutPage />}></Route>
-    //     <Route exact path="/contact" element={<ContactPage />}></Route>
-    //   </Routes>
-    //   <FooterPage />
-    // </Router>
-
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<HeaderPage />}>
-    //       <Route path="/home" element={<HomePage />} />
-    //       <Route path="/about" element={<AboutPage />} />
-    //       <Route path="/contact" element={<ContactPage />} />
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>

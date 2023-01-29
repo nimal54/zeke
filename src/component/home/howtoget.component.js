@@ -27,7 +27,7 @@ const HowToGetComponent = () => {
       <div className="howtoget">
         <h3 className="howtogettitle ">How to get Zeke ?</h3>
         <center>
-          <h4 style={{color:"grey"}}>Fly the Zeke way!!! How we help you to make the journey easy.</h4>
+          <h4>Fly the Zeke way!!! How we help you to make the journey easy.</h4>
         </center>
         <br/><br/>
 
@@ -47,11 +47,11 @@ const HowToGetComponent = () => {
                     <h1>{data.head}</h1>
                     <p> {data.subhead}</p>
                     <div style={{ display: "flex", justifyContent: "right" }}>
-                      <div class="btn_wrap">
-                        <span className="span_share">Share</span>
+                      <div class=" btn_wrap">
+                        <span className=" test_btn span_share">Share</span>
                         <div class="socialmedia_btns">
                           <i onClick={(e) => redirectToSocialMedia("facebook")} class="icons_btns fab fa-facebook-f"></i>
-                          <i onClick={(e) => redirectToSocialMedia("twitter")} class="icons_btns fab fa-twitter"></i>
+                          <i onClick={(e) => redirectToSocialMedia("twitter")} class="icons_btns fab fa-whatsapp"></i>
                           <i onClick={(e) => redirectToSocialMedia("instargam")} class="icons_btns fab fa-instagram"></i>
                           <i onClick={(e) => redirectToSocialMedia("linkedin")} class="icons_btns fab fa-linkedin"></i>
                         </div>

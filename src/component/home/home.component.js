@@ -11,20 +11,17 @@ import PartTimeCalculator from "./parttimecalculator.component";
 import SOPComponent from "./sop.component";
 import BlogBannerComponent from "./blogbanner.component";
 import CountryListBannerComponent from "../country/countryListbanner.component"
+import HeaderAndHeroComponent from "./header.and.herocomponent"
 
 
-const HomeComponent = () => {
+const HomeComponent = (props) => {
   return (
-    <div>
-      {/* hero content  */}
-      <HeroComponent />
-
+    <center>
       {/* benefits content */}
       <BenefitsComponent />
 
       {/* SOP  */}
       <SOPComponent />
-
 
       {/* how to get  */}
       <HowToGetComponent />
@@ -41,7 +38,7 @@ const HomeComponent = () => {
 
 
 
-    </div>
+    </center>
   );
 };
 

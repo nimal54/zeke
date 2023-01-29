@@ -37,9 +37,13 @@ function HeaderComponent(props) {
           style={{ fontSize: "30px", cursor: "pointer" }}
           onClick={() => setSlidebar(slidebar ? false : true)}
         >
-          &nbsp;&nbsp;&#9776; &nbsp;&nbsp;
+
         </span>
-        Zeke international
+        <div>
+          <span>&nbsp;&nbsp;&#9776; &nbsp;&nbsp;Zeke International</span>
+          <p style={{ textAlign: "left", paddingLeft: "8%", fontSize: "small", fontStyle: "italic", fontWeight: "600", paddingTop: "-10" }}>&nbsp;A go getters hub</p>
+        </div>
+
       </h1>
     </div>
   );

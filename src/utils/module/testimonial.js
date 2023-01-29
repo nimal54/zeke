@@ -53,22 +53,14 @@ const Testimonial = () => {
                 changeTestimonialIndex(false);
               }}
             >
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg"
-                alt="prev timeline arrow"
-                style={{ backgroundColor: "transparent", borderRadius: "50%" }}
-              />
+              <i class="arrow left"></i>
             </div>
             <div
               onClick={(e) => {
                 changeTestimonialIndex(true);
               }}
             >
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg"
-                alt="next timeline arrow"
-                style={{ backgroundColor: "transparent", borderRadius: "50%" }}
-              />
+              <i class="arrow right"></i>
             </div>
           </div>
         </div>

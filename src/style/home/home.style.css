@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  animation: 1s ease-out 0s 1 slideFromBottom ;
+  animation: 1.5s ease-out 0s 1 slideFromBottom ;
 }
 
 .joinus button {
@@ -29,8 +29,8 @@ body::-webkit-scrollbar {
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 4px solid #212121;
-	animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
+	animation: cursor 2s step-start infinite, 
+    text 10s steps(18) alternate infinite;
 }
 
 @keyframes cursor {
@@ -76,6 +76,12 @@ body::-webkit-scrollbar {
   font-family: 'Poppins';
   
 }
+.joinus button {
+  width: 40%;
+  background-color: var(--button_background_color);
+  color: var(--button_label_color);
+  font-weight: 400;
+}
 
 .joinus button:hover {
   background-color:var(--hero_joinbutton_txt_color) ;
@@ -103,11 +109,6 @@ body::-webkit-scrollbar {
   color: inherit;
 }
 
-.logo {
-  font-size: x-large;
-  color: var(--header_companylabel_color);
-  font-weight: 800;
-}
 .list {
   list-style: none;
   display: flex;
@@ -166,8 +167,8 @@ body::-webkit-scrollbar {
   }
   .joinus button {
     width: 40%;
-    background-color: var(--text_button_background);
-    color: var(--hero_joinbutton_txt_color);
+    background-color: var(--button_background_color);
+    color: var(--button_label_color);
     font-weight: 400;
   }
 }
@@ -200,8 +201,6 @@ body::-webkit-scrollbar {
   }
   .joinus button {
     width: 60%;
-    background-color: var(--text_button_background);
-    color: var(--hero_joinbutton_txt_color);
     font-weight: 400;
   }
 }

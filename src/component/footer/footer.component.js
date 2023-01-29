@@ -34,11 +34,11 @@ const FooterComponent = () => {
       >
         <div
           class="footer_container"
-          style={{ backgroundColor: constants.PRIMARY_COLOR, placeItems: 'center' }}
+          style={{ placeItems: 'center' }}
         >
           {/* left  */}
           <div class="footer-left">
-            <h3 style={{ color: constants.COMMON_COLOR }}>
+            <h3>
               <span>{constants.COMPANY_NAME}</span>
             </h3>
             <p class="footer-company-about">
@@ -108,10 +108,7 @@ const FooterComponent = () => {
         </div>
 
         {/* copyright footer */}
-        <div
-          className="footer_session2"
-          style={{ backgroundColor: constants.PRIMARY_COLOR }}
-        >
+        <div className="footer_session2">
           <p style={{ fontSize: "small", textAlign: "center" }}>
             Copyright &copy; 2023.{" "}
             <span>{window.innerWidth < 600 ? <Divider /> : ""}</span>All Rights

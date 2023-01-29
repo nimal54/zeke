@@ -2,6 +2,12 @@
   padding-bottom:10%;
   text-align: center;
 }
+.stepbystep h2{
+  color: var(--session2_title_color);
+}
+.stepbystep p{
+  color: var(--session2_tagline_color);
+}
 .cardsContainer{
 padding-inline: 13%;  
 }
@@ -14,7 +20,7 @@ padding-inline: 13%;
 .cards li h3 {
   font-weight: 400;
   font-size: medium;
-  color: var(--secondary_font_color);
+  color: var(--session2_boxcontent_color);
 }
 
 .morebutton_div{
@@ -24,12 +30,11 @@ padding-inline: 13%;
   width: 100%;
 }
 .morebutton {
-  background-color: var(--optional_color);
   width: 25%;
   height: 30px;
-    background-color: var(--text_button_background);
-    color: var(--hero_joinbutton_txt_color);
-    font-weight: 400;
+  background-color: var(--session2_morebutton_background_color);
+  color: var(--session2_morebutton_color);
+  font-weight: 400;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -39,11 +44,11 @@ padding-inline: 13%;
   top: 0;
   left: 0;
   z-index: 2;
-  background: #ccc;
+  background-color: var(--sesion2_boxbackground_color);
   border-radius: 30px;
   padding: 40px;
   padding-top: 1px;
-  box-shadow: 0 10 10px rgb(236, 236, 236);
+  box-shadow: 0 10 10px rgba(255, 255, 255, 0.564);
   transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
   transform-origin: 0 0;
 
@@ -76,7 +81,7 @@ padding-inline: 13%;
   position: relative;
   z-index: 10;
   opacity: 1;
-  background: #eee;
+  background:  var(--sesion2_boxbackground_color);
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 /* animation */

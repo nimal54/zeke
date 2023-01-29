@@ -7,6 +7,7 @@
   display: inline-flex;
   justify-content: space-around;
   vertical-align: top;
+  background-color: var(--footer_background_color);
 }
 
 /* Footer left */
@@ -23,7 +24,10 @@
 }
 .footer-center button:hover{
   transform: translate(0, -10%);
-    background-color: #0077b5;
+    background-color: var(--button_background_color);
+}
+.footer-left h3{
+  color: var(--footer_title_color) ;
 }
 
 .footer-center div{
@@ -67,17 +71,17 @@
 .social-menu ul li{
   list-style: none;
   margin: 0 15px;
+  color: white;
 }
 
 .social-menu ul li .fab{
   font-size: large;
   line-height: 40px;
   transition: .3s;
-  color: var(--secondary_color);
 }
 
 .social-menu ul li .fab:hover{
-  color: transparent;
+  color: var(--button_background_color);
 }
 
 .social-menu ul li a{
@@ -86,15 +90,17 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: transparent;
   text-align: center;
   transition: .6s;
+  color: white;
+  background-color: var(--button_background_color);
   box-shadow: 0 5px 4px rgba(0,0,0,.5);
 }
 
 .social-menu ul li a:hover{
   transform: translate(0, -10%);
-  background-color: #0077b5;
+  color: var(--button_label_color);
+  background-color: var(--button_background_hover_color);
 }
 
 
@@ -104,6 +110,7 @@
     margin-bottom: 10px;
     width: 100%;
     display: inline-flex ;
+    background-color: var(--footer_background_color);
     border-top: 1px solid #fff;
 }
 .newsletter{

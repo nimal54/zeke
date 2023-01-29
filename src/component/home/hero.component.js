@@ -4,6 +4,7 @@ import "../../style/home/home.style.css";
 import banner from "../../assets/home/heroImage.jpg";
 
 import * as contents from "../../utils/content.collections";
+import HeaderComponent from "../header/header.component";
 
 
 // import * as contents from "../../utils/content.collections";

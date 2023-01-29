@@ -83,7 +83,7 @@ const ContactComponent = () => {
                 eiusmod tempor
               </p>
             </div>
-            <div class="social-menu paddingb4" style={{ display: 'flex', justifyContent: "space-around" }}>
+            <div class="social-menu-incontact paddingb4" style={{ display: 'flex', justifyContent: "space-around" }}>
               <div className="smallDiv">
                 <h3>Phone</h3>
                 <p>+91 9876543211</p>
@@ -93,7 +93,7 @@ const ContactComponent = () => {
                 <p>zeke@hello.com</p>
               </div>
             </div>
-            <div class="social-menu">
+            <div class="social-menu-incontact">
               <ul>
                 <li>
                   <a href="#" target="blank">

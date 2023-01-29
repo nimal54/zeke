@@ -192,3 +192,43 @@ export const BLOGCONTENT = [
     "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
   },
 ]
+
+
+//COUNTRYBANNERCONTENT content
+export const COUNTRYBANNERCONTENT = [
+  {
+   coverPhoto:"../../assets/country/banner/canada_cover.jpg",
+   icon:"../../assets/country/banner/canada_flag.jpg",
+   head:"Canada",
+   subhead:"Immigration friendly country, job focused courses & post study work permit",
+  },{
+    coverPhoto:"../../assets/country/banner/aus_cover.jpg",
+    icon:"../../assets/country/banner/au_flag.jpg",
+    head:"Australia",
+    subhead:"Immigration friendly country, job focused courses & post study work permit",
+   },
+   {
+    coverPhoto:"../../assets/country/banner/nz_cover.jpg",
+    icon:"../../assets/country/banner/nz_flag.jpg",
+    head:"Newzealand",
+    subhead:"Immigration friendly country, job focused courses & post study work permit",
+   },
+   {
+    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
+    icon:"../../assets/country/banner/uk_flag.jpg",
+    head:"United Kingdom",
+    subhead:"Immigration friendly country, job focused courses & post study work permit",
+   },
+   {
+    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
+    icon:"../../assets/country/banner/uk_flag.jpg",
+    head:"Sweden",
+    subhead:"Immigration friendly country, job focused courses & post study work permit",
+   },
+   {
+    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
+    icon:"../../assets/country/banner/uk_flag.jpg",
+    head:"Germany",
+    subhead:"Immigration friendly country, job focused courses & post study work permit",
+   }
+];
