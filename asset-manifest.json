@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.e142ddfa.css",
+    "main.css": "/zekeinternational/static/css/main.317c6a02.css",
     "main.js": "/zekeinternational/static/js/main.120e2513.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
     "static/media/hero_img.png": "/zekeinternational/static/media/hero_img.b6b53a5d387d33ff7e6b.png",
@@ -21,12 +21,12 @@
     "static/media/sw_flag.jpg": "/zekeinternational/static/media/sw_flag.47a0f01c9865e0f9ad1b.jpg",
     "static/media/gn_flag.jpg": "/zekeinternational/static/media/gn_flag.713d0cc0c7b07d1acad9.jpg",
     "index.html": "/zekeinternational/index.html",
-    "main.e142ddfa.css.map": "/zekeinternational/static/css/main.e142ddfa.css.map",
+    "main.317c6a02.css.map": "/zekeinternational/static/css/main.317c6a02.css.map",
     "main.120e2513.js.map": "/zekeinternational/static/js/main.120e2513.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e142ddfa.css",
+    "static/css/main.317c6a02.css",
     "static/js/main.120e2513.js"
   ]
 }
