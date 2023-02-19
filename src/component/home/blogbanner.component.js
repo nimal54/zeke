@@ -7,9 +7,9 @@ const BlogBannerComponent = () => {
     return (
         <center>
 
-            <section class="newsletter" style={{ display: "flex", flexDirection: "column",backgroundPosition:"center", flexWrap: "wrap", backgroundImage: `url(${img10})`,height:"250px", backgroundSize:"cover", backgroundRepeat:'no-repeat' }}>
+            <section class="newsletter item scrollFade" style={{ display: "flex", flexDirection: "column",backgroundPosition:"center", flexWrap: "wrap", backgroundImage: `url(${img10})`,height:"250px", backgroundSize:"cover", backgroundRepeat:'no-repeat' }}>
                 <div>
-                    <h1 style={{ color: "white" }}>Are you Ready to explore!!!</h1>
+                    <h1 style={{ color: "white" }}>Begin your journey with us !!!</h1>
                     <div className="meetus" style={{ justifyContent: "center", width: "100%" }}>
                         <button onClick={(e) => ""}  >Click here</button>
                     </div>

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 85%;
+  width: 88%;
   overflow-x: scroll;
   
 }
@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 50px;
+  gap: 65px;
 }
 
 .countryCard {
@@ -83,11 +83,13 @@
   padding-top: 5%;
   width: 250px;
   text-align: center;
+  padding-inline: 10px;
+  overflow-wrap: normal;
   word-wrap: break-word;
 }
 .profile-content p {
   font-size: medium;
-  line-height: 1.6;
+  padding-inline: 5px;
 }
 .profile-content .socials a {
   color: #d2d2d2;

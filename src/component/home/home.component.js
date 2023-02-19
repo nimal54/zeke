@@ -15,11 +15,34 @@ import HeaderAndHeroComponent from "./header.and.herocomponent"
 
 
 const HomeComponent = (props) => {
+
+
+  var socialmediaurls = contents.SOCIALMEDIAURL;
+
+  const getMediaUrl = (media) => {
+    var filteredItems = socialmediaurls.find((item) => item.media === media);
+    return filteredItems.url;
+  };
+
+  const redirectToSocialMedia = (media) => {
+    window.open(getMediaUrl(media), '_blank');
+  }
+
+
   return (
     <center>
       {/* benefits content */}
       <BenefitsComponent />
-
+      <div>
+        <ul class="sideButtonBar">
+          <li class="btn_nav_item">
+            <a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="btn_nav_link">
+              <i class="fa fa-whatsapp"></i>
+              {/* <span class="title">Home</span> */}
+            </a>
+          </li>
+        </ul>
+      </div>
       {/* SOP  */}
       <SOPComponent />
 

@@ -29,7 +29,7 @@ const HeroComponent = () => {
   }
 
   const sendToWhatsapp = () => {
-    var sendTo = "+919656119814"
+    var sendTo = "+916282345242"
     var messageBody = "Hello Zeke, I like to know more about you. please reach out me asap!!! "
     var sendRequest = "https://wa.me/" + sendTo + "/?text=" + messageBody
     window.open(sendRequest, '_blank')

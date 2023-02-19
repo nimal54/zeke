@@ -33,7 +33,7 @@ const FooterComponent = () => {
         }}
       >
         <div
-          class="footer_container"
+          class="footer_container item scrollFade"
           style={{ placeItems: 'center' }}
         >
           {/* left  */}
@@ -42,10 +42,11 @@ const FooterComponent = () => {
               <span>{constants.COMPANY_NAME}</span>
             </h3>
             <p class="footer-company-about">
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.Lorem
-              ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod
-              convallis velit, eu auctor lacus vehicula sit amet.
+              We are a group of experienced student counsellors who
+              are eager to help you reach your dreamland easily and happily.
+              We give you proper assistance and guidance in choosing the right
+              course and will make your study abroad dreams true.
+              Keeping the trust alive is our philosophy!
             </p>
           </div>
 

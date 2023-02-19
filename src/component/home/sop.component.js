@@ -20,7 +20,7 @@ const SOPComponent = () => {
 
   const sendToWhatsapp = () => {
     if (validation()) {
-      var sendTo = "+919656119814"
+      var sendTo = "+918590483366"
       var messageBody = "Hello Zeke, I like to know more about you. \nMy inputs are :\n\ncountry : " + data.country + "\ncourse : " + data.course + "\nintake : " + data.intake + "\n please reach out me asap!!! "
       var sendRequest = "https://wa.me/" + sendTo + "/?text=" + messageBody
       window.open(sendRequest, '_blank')
@@ -59,26 +59,35 @@ const SOPComponent = () => {
 
 
   return (
-    <div className="screen">
-      <div className="innerscreen">
-        <h2>Are you stuck at SOP ?</h2>
+    <div>
+      <div style={{paddingInline:"3%"}}>
+      <h2 className="headingh2 item scrollFade">Are you stuck at SOP ?</h2>
+      <p className="taglinep item scrollFade">
+        We help you write SOPs that never get rejected. If you want your SOPs to stand out, we’re there!
+      </p>
+      </div>
+      <div className="screen item scrollFade">
+        <div className="innerscreen item scrollFade">
+          {/* <h2>Are you stuck at SOP ?</h2>
         <p>
           We help you write SOPs that never get rejected. If you want your SOPs to stand out, we’re there!
-        </p>
-        <div class="login">
-          <input value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Country"></input>
-          <input value={data.course} onChange={(e) => saveInputDataToData("course", e.target.value)} type="text" placeholder="Course"></input>
-          <input value={data.intake} onChange={(e) => saveInputDataToData("intake", e.target.value)} type="text" placeholder="Intake"></input>
-        </div>
-        {data.errorMsg === "" ? "" : <div><p className="bounsing_errormsg" style={{ color: 'red', fontSize: 'small' }}>{data.errorMsg}</p></div>}
-        <div className="screen_meetus">
-          <div className="meetus">
-            <button onClick={(e) => sendEmail()}  >Drop a mail</button>
-            <button onClick={(e) => sendToWhatsapp()}>Just Whatsapp</button>
+        </p> */}
+          <div class="login item scrollFade">
+            <input value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Country"></input>
+            <input value={data.course} onChange={(e) => saveInputDataToData("course", e.target.value)} type="text" placeholder="Course"></input>
+            <input value={data.intake} onChange={(e) => saveInputDataToData("intake", e.target.value)} type="text" placeholder="Intake"></input>
+          </div>
+          {data.errorMsg === "" ? "" : <div><p className="bounsing_errormsg" style={{ color: 'red', fontSize: 'small' }}>{data.errorMsg}</p></div>}
+          <div className="screen_meetus item scrollFade">
+            <div className="meetus item scrollFade">
+              <button onClick={(e) => sendEmail()}  ><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;</span> Drop a mail</button>
+              <button onClick={(e) => sendToWhatsapp()}><span><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;</span>Just Whatsapp</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   );
 };
 

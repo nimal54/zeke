@@ -11,19 +11,37 @@
   align-items: baseline;
   gap: 10px;
 }
-.logo p{
-  font-size: large;
-  color: var(--header_title_color);
-  font-weight: 700;
+.logo h1{
+  color: #1C4F4A;
+  font-weight: 800;
+  font-size: x-large;
   line-height: 15px;
+  font-family: 'Averia Libre', cursive;
+  /* text-shadow: 0px 3px 0px #FFB130, 0px 14px 10px rgba(0, 0, 0, 0.15),
+		0px 24px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1); */
+
 }
 
+.hero_joinus button{
+  background-color: #1C4F4A;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.hero_joinus button:hover{
+  background-color: #BD8B13;
+  color: white;
+}
+.header_backgroundColorScrollDown{
+  background-color: #86BFBA;
+}
 .hero-text {
   text-align: center;
   align-items: center;
   position: absolute;
   height: fit-content;
   display: flex;
+  font-family: 'Averia Libre', cursive;
   flex-direction: column;
   justify-content: space-around;
   animation: fadeIn 2s infinite alternate;
@@ -49,6 +67,8 @@
 
 .nav-links a {
   text-decoration: none;
+  font-size: medium;
+  font-family: 'Averia Libre', cursive;
   color: var(--header_nav_btn_color);
 }
 .main-header {
@@ -113,6 +133,12 @@
 
 
 @media screen and (max-width: 810px) {
+
+  .logo h1{
+    font-weight: 700;
+    font-size: large;
+  
+  }
   .main-header .menu-icon {
     display: block;
   }

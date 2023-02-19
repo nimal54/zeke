@@ -20,6 +20,7 @@
 .footer-center {
   width: 15%;
   text-align: center;
+  color: var(--footer_title_color);
   
 }
 .footer-center button:hover{
@@ -43,6 +44,7 @@
 }
 .footer-company-about {
  font-size: small;
+ color:var(--footer_desc_color)
 }
 
 .footer-company-about span {
@@ -71,7 +73,6 @@
 .social-menu ul li{
   list-style: none;
   margin: 0 15px;
-  color: white;
 }
 
 .social-menu ul li .fab{
@@ -92,8 +93,8 @@
   border-radius: 50%;
   text-align: center;
   transition: .6s;
-  color: white;
-  background-color: var(--button_background_color);
+  color: var(--footer_desc_color);
+  background-color:#BD8B13;
   box-shadow: 0 5px 4px rgba(0,0,0,.5);
 }
 
@@ -109,6 +110,7 @@
     justify-content: center;
     margin-bottom: 10px;
     width: 100%;
+    color: var(--footer_title_color);
     display: inline-flex ;
     background-color: var(--footer_background_color);
     border-top: 1px solid #fff;

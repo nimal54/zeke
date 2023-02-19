@@ -26,7 +26,7 @@ const BenefitsComponent = () => {
   };
 
   return (
-    <div className="stepbystep">
+    <div className="stepbystep item scrollFade">
       <h2>Step by step to your dreams!!</h2>
       <p>This is our journey to make your journey easy!!!</p>
       <progress

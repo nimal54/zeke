@@ -10,7 +10,10 @@
     z-index: 999;
 }
 .white-heading{
-    color: #ffffff;
+    color: var(--session8_title_color);
+    font-size: xx-large;
+  font-weight: 800;
+  font-family: 'Averia Libre', cursive;
 }
 .heading:after {
     content: ' ';
@@ -29,6 +32,7 @@
     background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
     background-repeat: no-repeat;
     background-position: center;
+    /* background-color: var(--socialicon_label_color); */
 }
 
 .heading span {
@@ -194,13 +198,13 @@
     -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
 }
 .testimonial4_slide p {
-    color: #ffffff;
+    color: var(--session8_content_color);
     font-size: medium;
     line-height: 1.4;
     margin: 40px 0 20px 0;
 }
 .testimonial4_slide h4 {
-  color: #ffffff;
+  color: var(--session8_clientname_color);
   font-size: medium;
 }
 

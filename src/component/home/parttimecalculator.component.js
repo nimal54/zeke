@@ -21,10 +21,10 @@ const PartTimeCalculator = () => {
 	};
 	return (
 		<React.Fragment>
-			<center className="parttimeCalcu">
-				<h2 className="h2">Part time calculator !</h2>
+			<center className="parttimeCalcu item scrollFade">
+				<h2 className="h2 item scrollFade">Part time calculator !</h2>
 				<div className="calculator">
-					<div className="calcu_input_block">
+					<div className="calcu_input_block" style={{paddingInline:"2%"}}>
 						<h3 class="font-small">Choose country</h3>
 						<select onChange={(e) => updateCountryDetails(e.target.value)}>
 							{coun_list.map((data) => (
@@ -69,7 +69,7 @@ const PartTimeCalculator = () => {
 							></img>
 							<h2>
 								Total Amount you get <br />{" "}
-								<span style={{ color: "green" }}>{paymentForSelectedJob * partTimeHour} ₹/ hr</span>
+								<span style={{ color: "green" }}>{paymentForSelectedJob * partTimeHour} ₹</span>
 							</h2>
 						</div>
 					</div>

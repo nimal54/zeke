@@ -80,6 +80,13 @@ export const COUNTRY_AND_CURRENCY = [
     { "name": "Restaurant waiter/ kitchen hand", "pay": "24" }],
     currency: "AU Dollar",
     currencyValue: "56"
+  },
+  {
+    country: "Canada CA",
+    joblist: [{ "name": "Console Operator/ Pump Operator", "pay": "24" }, { "name": "Shopkeeper", "pay": "18.50" }, { "name": "Cleaning", "pay": "15.50" }, { "name": "Warehouse", "pay": "20" }, { "name": "House Moving", "pay": "23" },{ "name": "Restaurant waiter", "pay": "15.50" },
+    { "name": "Carwash Attended", "pay": "15.50" }],
+    currency: "Canadian Dollar",
+    currencyValue: "61.42"
   }
 ]
 
@@ -87,39 +94,39 @@ export const COUNTRY_AND_CURRENCY = [
 export const TESTIMONIAL_CONTENT = [
   {
     client: "0",
-    photo_path: "../../assets/testimonial/avatar1.png",
+    photo_path: "../../assets/testimonial/Amal_Varghese.pdf",
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry... Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    client: "1",
+    client: "Amal Varghese",
     photo_path: "../../assets/testimonial/avatar2.png",
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    client: "2",
+    client: "Diya Jaison",
     photo_path: "../../assets/testimonial/avatar3.png",
     content:
       "Lorem Ipsum is simply dummy text of the printing sfsdgfsand typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    client: "3",
+    client: "Jovin Joy",
     photo_path: "../../assets/testimonial/avatar4.png",
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    client: "4",
+    client: "Tony K Xavier",
     photo_path: "../../assets/testimonial/avatar5.png",
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    client: "5",
+    client: "Justine Saji John",
     photo_path: "../../assets/testimonial/avatar3.png",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sdd,",
+      "I had the pleasure of working with Zeke international when writing my statement of purpose for my student visa to Canada. Their  attention to detail and understanding of the requirements for a successful visa application was second to none and with this support, I was able to present a clear and compelling case for why I deserved the opportunity to study in Canada. I am extremely pleased with the level of probity and would highly recommend Zeke to anyone in need of guidance for their visa application.",
   }
 ];
 
@@ -127,22 +134,22 @@ export const TESTIMONIAL_CONTENT = [
 export const SOCIALMEDIAURL = [
   {
     "media":"facebook",
-    "url":"https://www.facebook.com/nimal.viju.3/"
+    "url":"https://www.facebook.com/profile.php?id=100090438877680"
   },
   {
     "media":"twitter",
-    "url":"http://www.w3schools.com"
+    "url":"http://www.google.com"
   },
   {
     "media":"instargam",
-    "url":"https://www.instagram.com/nimalviju/"
+    "url":"https://www.instagram.com/zekeinternational/"
   }, {
     "media":"whatsapp",
-    "url":"https://wa.me/+919656119814/?text=%22Hello%22"
+    "url":"https://wa.me/+916282345242/?text=%22Hello%22"
   },
   {
     "media":"linkedin",
-    "url":"https://www.linkedin.com/in/nimal-viju-3503a4176/"
+    "url":"https://www.linkedin.com/feed/"
   }
 ]
 

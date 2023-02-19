@@ -11,7 +11,7 @@ const BlogComponent = () => {
   return (
     <React.Fragment>
       <div className="blogMainFrame" >
-        <center><h2>Blogs</h2></center>
+        <center><h2>Read. Learn. Repeat!</h2></center>
         {contents.BLOGCONTENT.map((data, index) =>
           <section class="blog_container">
             <div class="blog_card-container">

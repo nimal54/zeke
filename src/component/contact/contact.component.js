@@ -20,7 +20,7 @@ const ContactComponent = () => {
 
   const sendToWhatsapp = () => {
     // if (validation()) {
-    var sendTo = "+919656119814"
+    var sendTo = "+916282345242"
     var messageBody = "Hello Zeke, I like to know more about you. \nMy inputs are :\n\ncountry : " + data.country + "\ncourse : " + data.course + "\nName : " + data.name + "\n please reach out me asap!!! "
     var sendRequest = "https://wa.me/" + sendTo + "/?text=" + messageBody
     window.open(sendRequest, '_blank')

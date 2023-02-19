@@ -37,7 +37,7 @@ const HeaderAndHeroComponent = (props) => {
     }
 
     const sendToWhatsapp = () => {
-        var sendTo = "+919656119814"
+        var sendTo = "+916282345242"
         var messageBody = "Hello Zeke, I like to know more about you. please reach out me asap!!! "
         var sendRequest = "https://wa.me/" + sendTo + "/?text=" + messageBody
         window.open(sendRequest, '_blank')
@@ -45,11 +45,12 @@ const HeaderAndHeroComponent = (props) => {
 
     return (
 
-        <div>
-            <header class="main-header">
-                <div class="logo">
-                    <img src={zi_logo} style={{width:"30px", height:"30px"}}></img>
-                    <p>{constants.COMPANY_NAME}<br/><span style={{fontWeight:"400", fontSize:"small",textAlign:"right"}}>A Go Getters Hub</span></p>
+        <div >
+            <header class="main-header " id="header_id" style={{ zIndex: "20" }}>
+                <div class="logo" >
+                    <img src={zi_logo} style={{ width: "30px", height: "30px" }}></img>
+                    <h1 style={{ fontFamily: "'Engagement', cursive;" }}>{constants.COMPANY_NAME}<br />
+                        <span style={{ fontWeight: "400", color: "white", textShadow: 'none', fontSize: "small", textAlign: "right" }}>A Go Getters Hub</span></h1>
                 </div>
 
                 <input type="checkbox" class="menu-btn" id="menu-btn" />
@@ -74,17 +75,17 @@ const HeaderAndHeroComponent = (props) => {
             </header>
             {props.pathInfo === "home" ?
                 (
-                        <div class="temp" style={{ backgroundImage: `url(${img10})` }}>
+                    <div class="temp" style={{ backgroundImage: `url(${img10})` }}>
 
-                            <div className="hero-text">
-                                <h1 className="typewriter">{contents.HERO_HEADINGS[headingIndex]}</h1>
-                                <p>{contents.SUBLINES}</p>
-                                <div className="joinus">
-                                    <button onClick={(e) => sendEmail()}  >Join with Gmail</button>
-                                    <button onClick={(e) => sendToWhatsapp()}>Join with Whatsapp</button>
-                                </div>
+                        <div className="hero-text item scrollFade">
+                            <h1 className="typewriter">{contents.HERO_HEADINGS[headingIndex]}</h1>
+                            <p>{contents.SUBLINES}</p>
+                            <div className="joinus hero_joinus">
+                                <button onClick={(e) => sendEmail()}><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;</span> Gmail</button>
+                                <button onClick={(e) => sendToWhatsapp()}><span><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;</span>Whatsapp</button>
                             </div>
                         </div>
+                    </div>
                 )
                 :
                 <div style={{ paddingBottom: "5%" }}>

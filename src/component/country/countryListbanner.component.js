@@ -26,36 +26,36 @@ const CountryListBannerComponent = () => {
             coverPhoto: c1,
             icon: f1,
             head: "Canada",
-            subhead: "1 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Want a world-class education and an amazing North American study experience but on a lower budget? For value for money choose Canada!",
         }, {
             coverPhoto: c0,
             icon: f0,
             head: "Australia",
-            subhead: "2 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Dreaming of living and studying in the United States but overwhelmed by the vast information and choices available out there?",
         },
         {
             coverPhoto: c2,
             icon: f2,
             head: "Newzealand",
-            subhead: "3 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Won over by the quality, safety, affordability and friendliness this country offers to all international students and making it your study destination of choice?",
         },
         {
             coverPhoto: c3,
             icon: f3,
             head: "United Kingdom",
-            subhead: "4 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Determined to get a quality British education, graduate with a world-recognised qualification and improve your career and future prospects?",
         },
         {
             coverPhoto: c4,
             icon: f4,
             head: "Sweden",
-            subhead: "5 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Millions have chosen to move Down Under to further their education and career prospects, making this learning powerhouse the third most popular study destination in the world. Thinking of joining them?t",
         },
         {
             coverPhoto: c5,
             icon: f5,
             head: "Germany",
-            subhead: "6 Immigration friendly country, job focused courses & post study work permit",
+            subhead: "Study in one of the most beautiful, safest and friendliest countries in the world. Live with warm and welcoming locals who respect other cultures.",
         }
     ])
 
@@ -85,13 +85,13 @@ const CountryListBannerComponent = () => {
     return (
 
         <div>
-            <h3 className="howtogettitle ">Our Services at ...</h3>
+            <h3 className="howtogettitle item scrollFade">Our Services at ...</h3>
             <center>
-                <h4 style={{ color: "grey" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <h4 style={{ color: "grey" }}>Choose your country and we’re here to make it happen!.</h4>
 
             </center>
             <br /><br />
-            <div className="countrybox">
+            <div className="countrybox item scrollFade">
                 <div className="arrowButton">
                     <p onClick={(e) => setDecrement(decrement ? false : true)} style={{ cursor: "pointer" }} ><i class="arrow left"></i></p>
                 </div>
