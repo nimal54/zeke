@@ -73,7 +73,7 @@ const SOPComponent = () => {
           We help you write SOPs that never get rejected. If you want your SOPs to stand out, we’re there!
         </p> */}
           <div class="login item scrollFade">
-            <input value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Country"></input>
+            <input  value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Country"></input>
             <input value={data.course} onChange={(e) => saveInputDataToData("course", e.target.value)} type="text" placeholder="Course"></input>
             <input value={data.intake} onChange={(e) => saveInputDataToData("intake", e.target.value)} type="text" placeholder="Intake"></input>
           </div>

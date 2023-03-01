@@ -29,24 +29,8 @@ const BenefitsComponent = () => {
     <div className="stepbystep item scrollFade">
       <h2>Step by step to your dreams!!</h2>
       <p>This is our journey to make your journey easy!!!</p>
-      <progress
-        id="file"
-        style={{ width: "70%", height: "8px", accentColor: "#4caf50" }}
-        value={findPercentage()}
-        max="100"
-      >
-        {" "}
-        {currentCardId}{" "}
-      </progress>
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        {currentCardId >= 1 ? <h6> 1</h6> : ""}
-        {currentCardId >= 2 ? <h6> 2</h6> : ""}
-        {currentCardId >= 3 ? <h6> 3</h6> : ""}
-        {currentCardId >= 4 ? <h6> 4</h6> : ""}
-        {currentCardId >= 5 ? <h6> 5</h6> : ""}
-      </div>
 
-      <div className="cardsContainer">
+      <div className="cardsContainer" style={{paddingBottom:"2%", paddingTop:"3%"}}>
         <ul class="cards">
           <li
             class={
@@ -188,6 +172,28 @@ const BenefitsComponent = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <progress
+        id="file"
+        style={{ width: "70%", height: "8px", accentColor: "#4caf50"  }}
+        value={findPercentage()}
+        max="100"
+      >
+        {" "}
+        {currentCardId}{" "}
+      </progress>
+      <div style={{ display: "flex", justifyContent: "space-evenly", paddingTop:"10px" }}>
+      <h6> 1</h6>
+      <h6> 2</h6>
+      <h6> 3</h6>
+      <h6> 4</h6>
+      <h6> 5</h6>
+{/* 
+        {currentCardId >= 1 ? <h6> 1</h6> : ""}
+        {currentCardId >= 2 ? <h6> 2</h6> : ""}
+        {currentCardId >= 3 ? <h6> 3</h6> : ""}
+        {currentCardId >= 4 ? <h6> 4</h6> : ""}
+        {currentCardId >= 5 ? <h6> 5</h6> : ""} */}
       </div>
     </div>
   );

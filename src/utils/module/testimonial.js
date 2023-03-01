@@ -7,20 +7,23 @@ import img3 from "../../assets/testimonial/diya.png";
 import img4 from "../../assets/testimonial/jovin.png";
 import img5 from "../../assets/testimonial/tony.png";
 import img6 from "../../assets/testimonial/justin.png";
+import img7 from "../../assets/testimonial/anandhu.jpeg";
+import img8 from "../../assets/testimonial/rinu.jpeg";
+import img9 from "../../assets/testimonial/suby.jpeg";
 
 
 const Testimonial = () => {
-  const arr_img = [img1, img2, img3, img4, img5, img6];
+  const arr_img = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   const [testimonial_index, setTestimonial_index] = useState(1);
 
   const changeTestimonialIndex = (isIncrement) => {
     if (isIncrement) {
       var temp = testimonial_index;
-      temp = testimonial_index + 1 < 6 ? testimonial_index + 1 : 1;
+      temp = testimonial_index + 1 < 9 ? testimonial_index + 1 : 1;
       setTestimonial_index(temp);
     } else {
       var temp = testimonial_index;
-      temp = testimonial_index - 1 > 0 ? testimonial_index - 1 : 5;
+      temp = testimonial_index - 1 > 0 ? testimonial_index - 1 : 8;
       setTestimonial_index(temp);
     }
   };

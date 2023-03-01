@@ -22,35 +22,35 @@ export const GMAIL_TAGLINES = ["Mail your musings!"];
 export const HOW_TO_GET_ZEKE = [
   {
     head: "She said... He said... They said…",
-    firstposition:true,
+    firstposition: true,
     photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "No more confusion and second thoughts! She, He and They might go wrong, but we never go wrong!",
   },
   {
     head: "It’s all in your hands, literally!",
-    firstposition:false,
+    firstposition: false,
     photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "The thing in your hand is a miracle. Get connected with us via all social media or you can just dial us right away!",
   },
   {
     head: "We’re a team now!",
-    firstposition:true,
+    firstposition: true,
     photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "Now that we’re a squad it’s going to be teamwork. Together let us make this journey a wonderful experience.",
   },
   {
     head: "Yaaay! It’s Approved!",
-    firstposition:false,
+    firstposition: false,
     photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "It's going to be a little long wait but we will never leave you until you get that passport stamped",
   },
   {
     head: "And then they flew away happily!",
-    firstposition:true,
+    firstposition: true,
     photo_path: "../../assets/home/hm1.jpg",
     subhead:
       "Like a mother bird makes their children fly away, we’ll watch you fly to your dreams.",
@@ -62,7 +62,7 @@ export const HOW_TO_GET_ZEKE = [
 export const COUNTRY_AND_CURRENCY = [
   {
     country: "United Kingdom UK",
-    joblist: [{ "name": "Pump operator", "pay": "17.5" }, { "name": "Shopkeeper", "pay": "11.42" }, 
+    joblist: [{ "name": "Pump operator", "pay": "17.5" }, { "name": "Shopkeeper", "pay": "11.42" },
     { "name": "Cleaning", "pay": "10.64" }, { "name": "Warehouse", "pay": "12.65" }, { "name": "House moving", "pay": "12.07" }, { "name": "Car wash", "pay": "13.08" }, { "name": "Restaurant waiter/ kitchen hand", "pay": "9.60" }],
     currency: "Pound",
     currencyValue: "99.14"
@@ -83,7 +83,7 @@ export const COUNTRY_AND_CURRENCY = [
   },
   {
     country: "Canada CA",
-    joblist: [{ "name": "Console Operator/ Pump Operator", "pay": "24" }, { "name": "Shopkeeper", "pay": "18.50" }, { "name": "Cleaning", "pay": "15.50" }, { "name": "Warehouse", "pay": "20" }, { "name": "House Moving", "pay": "23" },{ "name": "Restaurant waiter", "pay": "15.50" },
+    joblist: [{ "name": "Console Operator/ Pump Operator", "pay": "24" }, { "name": "Shopkeeper", "pay": "18.50" }, { "name": "Cleaning", "pay": "15.50" }, { "name": "Warehouse", "pay": "20" }, { "name": "House Moving", "pay": "23" }, { "name": "Restaurant waiter", "pay": "15.50" },
     { "name": "Carwash Attended", "pay": "15.50" }],
     currency: "Canadian Dollar",
     currencyValue: "61.42"
@@ -95,61 +95,75 @@ export const TESTIMONIAL_CONTENT = [
   {
     client: "0",
     photo_path: "../../assets/testimonial/Amal_Varghese.pdf",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry... Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    content: "If you’re planning to study abroad ,ZEKE is the best agency for you ..They will help you out and guide you in all kinds of possible ways . i highly recommend ZEKE INTERNATIONAL because of them i reached my dream destination. Special thanks to ZEKE team and all wishes to future endeavors",
   },
   {
     client: "Amal Varghese",
     photo_path: "../../assets/testimonial/avatar2.png",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    content: "I had a great experience and was very well guided by my counselor throughout the process from the competitive test preparations to acquiring my Canada visa. The response to any of my queries was quick and the instructions were always  clear and to the point . I recommend ZEKE INTERNATIONAL to anyone looking to go abroad for any discipline of study . ",
   },
   {
     client: "Diya Jaison",
     photo_path: "../../assets/testimonial/avatar3.png",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing sfsdgfsand typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    content: "I got my Canada visa rejected once and was confused about  my future . My friend recommended ZEKE INTERNATIONAL  consultancy . I had a very pleasant experience with them. They  coordinated with me the entire way and solve all my queries and doubts at any given time . I got my visa approved . I highly  recommend ZEKE INTERNATIONAL and wish them all  success",
   },
   {
     client: "Jovin Joy",
     photo_path: "../../assets/testimonial/avatar4.png",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    content: "I had the pleasure of working with ZEKE INTERNATIONAL  when writing my statement of purpose for my student visa to Canada. Their attention to detail and understanding of the requirements for a successful visa application was second to none and with this support i was able to present a clear and compelling case for why i deserved the opportunity to study in Canada. I am extremely pleased with the level of probity and  would highly recommend ZEKE to anyone in need of guidance  for their visa application",
   },
   {
     client: "Tony K Xavier",
     photo_path: "../../assets/testimonial/avatar5.png",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "If you’re planning to study abroad ,ZEKE is the best agency for you ..They will help you out and guide you in all kinds of possible ways . i highly recommend ZEKE INTERNATIONAL because of them i reached my dream destination. Special thanks to ZEKE team and all wishes to future endeavors",
   },
   {
     client: "Justine Saji John",
     photo_path: "../../assets/testimonial/avatar3.png",
     content:
       "I had the pleasure of working with Zeke international when writing my statement of purpose for my student visa to Canada. Their  attention to detail and understanding of the requirements for a successful visa application was second to none and with this support, I was able to present a clear and compelling case for why I deserved the opportunity to study in Canada. I am extremely pleased with the level of probity and would highly recommend Zeke to anyone in need of guidance for their visa application.",
-  }
+  },
+  {
+    client: "Anandu Raj",
+    photo_path: "../../assets/testimonial/avatar5.png",
+    content:
+      "I had the pleasure of working with Zeke International when I approached for  Canadian student visa. Their attention to detail and understanding of the requirements for a successful visa application was really interesting and   this support allowed me to make a clear and convincing case as to why I deserved the opportunity to study in Canada. I am very pleased with the level of honesty and would  recommend Zeke to anyone who needs guidance on their  student visa application",
+  },
+  {
+    client: "Rinu Joseph",
+    photo_path: "../../assets/testimonial/avatar5.png",
+    content:
+      "I had a great experience and was very well guided by my counselor throughout the process from the competitive test preparations to acquiring my Canada visa. The response to any of my queries was quick and the instructions were always  clear and to the point . I recommend ZEKE INTERNATIONAL to anyone looking to go abroad for any discipline of study . ",
+  },
+  {
+    client: "Suby jose",
+    photo_path: "../../assets/testimonial/avatar5.png",
+    content:
+      "I had the pleasure of working with Zeke International when I approached for  Canadian student visa. Their attention to detail and understanding of the requirements for a successful visa application was really interesting and   this support allowed me to make a clear and convincing case as to why I deserved the opportunity to study in Canada. I am very pleased with the level of honesty and would  recommend Zeke to anyone who needs guidance on their  student visa application",
+  },
 ];
 
 
 export const SOCIALMEDIAURL = [
   {
-    "media":"facebook",
-    "url":"https://www.facebook.com/profile.php?id=100090438877680"
+    "media": "facebook",
+    "url": "https://www.facebook.com/profile.php?id=100090438877680"
   },
   {
-    "media":"twitter",
-    "url":"http://www.google.com"
+    "media": "twitter",
+    "url": "http://www.google.com"
   },
   {
-    "media":"instargam",
-    "url":"https://www.instagram.com/zekeinternational/"
+    "media": "instargam",
+    "url": "https://www.instagram.com/zekeinternational/"
   }, {
-    "media":"whatsapp",
-    "url":"https://wa.me/+916282345242/?text=%22Hello%22"
+    "media": "whatsapp",
+    "url": "https://wa.me/+916282345242/?text=%22Hello%22"
   },
   {
-    "media":"linkedin",
-    "url":"https://www.linkedin.com/feed/"
+    "media": "linkedin",
+    "url": "https://www.linkedin.com/feed/"
   }
 ]
 
@@ -157,46 +171,46 @@ export const SOCIALMEDIAURL = [
 
 export const BLOGCONTENT = [
   {
-    "media":"Facebook",
-    "imagepath":"../../assets/testimonial/avatar2.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Facebook",
+    "imagepath": "../../assets/testimonial/avatar2.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
   {
-    "media":"Instagram",
-    "imagepath":"../../assets/testimonial/avatar1.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Instagram",
+    "imagepath": "../../assets/testimonial/avatar1.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
   {
-    "media":"Web",
-    "imagepath":"../../assets/testimonial/avatar4.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Web",
+    "imagepath": "../../assets/testimonial/avatar4.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
   {
-    "media":"Medium",
-    "imagepath":"../../assets/testimonial/avatar2.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Medium",
+    "imagepath": "../../assets/testimonial/avatar2.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
   {
-    "media":"Newspaper",
-    "imagepath":"../../assets/testimonial/avatar3.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Newspaper",
+    "imagepath": "../../assets/testimonial/avatar3.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
   {
-    "media":"Twitter",
-    "imagepath":"../../assets/testimonial/avatar1.png",
-    "heading":"And then they flew away happily!",
-    "paragraph":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
-    "redirectingurl":"https://www.facebook.com/nimal.viju.3/"
+    "media": "Twitter",
+    "imagepath": "../../assets/testimonial/avatar1.png",
+    "heading": "And then they flew away happily!",
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
+    "redirectingurl": "https://www.facebook.com/nimal.viju.3/"
   },
 ]
 
@@ -204,38 +218,38 @@ export const BLOGCONTENT = [
 //COUNTRYBANNERCONTENT content
 export const COUNTRYBANNERCONTENT = [
   {
-   coverPhoto:"../../assets/country/banner/canada_cover.jpg",
-   icon:"../../assets/country/banner/canada_flag.jpg",
-   head:"Canada",
-   subhead:"Immigration friendly country, job focused courses & post study work permit",
-  },{
-    coverPhoto:"../../assets/country/banner/aus_cover.jpg",
-    icon:"../../assets/country/banner/au_flag.jpg",
-    head:"Australia",
-    subhead:"Immigration friendly country, job focused courses & post study work permit",
-   },
-   {
-    coverPhoto:"../../assets/country/banner/nz_cover.jpg",
-    icon:"../../assets/country/banner/nz_flag.jpg",
-    head:"Newzealand",
-    subhead:"Immigration friendly country, job focused courses & post study work permit",
-   },
-   {
-    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
-    icon:"../../assets/country/banner/uk_flag.jpg",
-    head:"United Kingdom",
-    subhead:"Immigration friendly country, job focused courses & post study work permit",
-   },
-   {
-    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
-    icon:"../../assets/country/banner/uk_flag.jpg",
-    head:"Sweden",
-    subhead:"Immigration friendly country, job focused courses & post study work permit",
-   },
-   {
-    coverPhoto:"../../assets/country/banner/uk_cover.jpg",
-    icon:"../../assets/country/banner/uk_flag.jpg",
-    head:"Germany",
-    subhead:"Immigration friendly country, job focused courses & post study work permit",
-   }
+    coverPhoto: "../../assets/country/banner/canada_cover.jpg",
+    icon: "../../assets/country/banner/canada_flag.jpg",
+    head: "Canada",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  }, {
+    coverPhoto: "../../assets/country/banner/aus_cover.jpg",
+    icon: "../../assets/country/banner/au_flag.jpg",
+    head: "Australia",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  },
+  {
+    coverPhoto: "../../assets/country/banner/nz_cover.jpg",
+    icon: "../../assets/country/banner/nz_flag.jpg",
+    head: "Newzealand",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  },
+  {
+    coverPhoto: "../../assets/country/banner/uk_cover.jpg",
+    icon: "../../assets/country/banner/uk_flag.jpg",
+    head: "United Kingdom",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  },
+  {
+    coverPhoto: "../../assets/country/banner/uk_cover.jpg",
+    icon: "../../assets/country/banner/uk_flag.jpg",
+    head: "Sweden",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  },
+  {
+    coverPhoto: "../../assets/country/banner/uk_cover.jpg",
+    icon: "../../assets/country/banner/uk_flag.jpg",
+    head: "Germany",
+    subhead: "Immigration friendly country, job focused courses & post study work permit",
+  }
 ];

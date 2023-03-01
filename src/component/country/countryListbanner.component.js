@@ -49,7 +49,7 @@ const CountryListBannerComponent = () => {
             coverPhoto: c4,
             icon: f4,
             head: "Sweden",
-            subhead: "Millions have chosen to move Down Under to further their education and career prospects, making this learning powerhouse the third most popular study destination in the world. Thinking of joining them?t",
+            subhead: "Millions have chosen to move Down Under to further their education and career prospects,.",
         },
         {
             coverPhoto: c5,

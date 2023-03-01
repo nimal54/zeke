@@ -33,7 +33,16 @@
   color: white;
 }
 .header_backgroundColorScrollDown{
-  background-color: #86BFBA;
+  background-color: var(--footer_background_color);
+  color: white;
+}
+.nav-links li {
+  padding:10px;
+}
+.nav-links {
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color:rgba(255, 255, 255, 0.2);
 }
 .hero-text {
   text-align: center;
@@ -94,7 +103,12 @@
   padding: 1rem 0.5rem;
 }
 .main-header .nav-links .nav-link a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  font-weight: bolder;
+  background-color: white;
+  color: #1C4F4A;
+  border-radius: 50px;
+  padding: 10px;
+  padding-inline: 25px;
 }
 .main-header .menu-icon {
   position: relative;
