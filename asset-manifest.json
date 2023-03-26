@@ -1,11 +1,19 @@
 {
   "files": {
-    "main.css": "/zekeinternational/static/css/main.d53f64e9.css",
-    "main.js": "/zekeinternational/static/js/main.ec0deb92.js",
+    "main.css": "/zekeinternational/static/css/main.68cb3d64.css",
+    "main.js": "/zekeinternational/static/js/main.0d1b877a.js",
     "static/js/787.d845e869.chunk.js": "/zekeinternational/static/js/787.d845e869.chunk.js",
+    "static/media/5.pdf": "/zekeinternational/static/media/5.01ddcd8ff9876c8d782e.pdf",
+    "static/media/7.pdf": "/zekeinternational/static/media/7.ae089eb1a808c1fd3d07.pdf",
+    "static/media/2.pdf": "/zekeinternational/static/media/2.90300ee757b667b8b767.pdf",
+    "static/media/1.pdf": "/zekeinternational/static/media/1.8318c9b9559288cad413.pdf",
+    "static/media/6.pdf": "/zekeinternational/static/media/6.a988c0fd89385eda9204.pdf",
     "static/media/hero_img.png": "/zekeinternational/static/media/hero_img.1dafb32c7a63ee735a32.png",
     "static/media/about_illustration.jpg": "/zekeinternational/static/media/about_illustration.b17918785042d0e6e6c5.jpg",
+    "static/media/4.pdf": "/zekeinternational/static/media/4.1792a943dccbb2637986.pdf",
+    "static/media/8.pdf": "/zekeinternational/static/media/8.3b16386565f64bf81433.pdf",
     "static/media/earn.jpg": "/zekeinternational/static/media/earn.d70c03ff21a84e1e73e0.jpg",
+    "static/media/3.pdf": "/zekeinternational/static/media/3.abaf64860146a07222ee.pdf",
     "static/media/heroImage.jpg": "/zekeinternational/static/media/heroImage.5436ec92454a174dd4d0.jpg",
     "static/media/2.jpg": "/zekeinternational/static/media/2.5d09645f6393d411549a.jpg",
     "static/media/1.jpg": "/zekeinternational/static/media/1.214643ea76b1a5cbf6a8.jpg",
@@ -28,16 +36,15 @@
     "static/media/rinu.jpeg": "/zekeinternational/static/media/rinu.677a469ea4050cdca3d6.jpeg",
     "static/media/suby.jpeg": "/zekeinternational/static/media/suby.28511d4fc47346dfb5cb.jpeg",
     "static/media/nz_flag.jpg": "/zekeinternational/static/media/nz_flag.b4e8b2f8121c85f3fd57.jpg",
-    "static/media/zi_logo.png": "/zekeinternational/static/media/zi_logo.7cce4e2f45a65f9e1962.png",
     "static/media/sw_flag.jpg": "/zekeinternational/static/media/sw_flag.47a0f01c9865e0f9ad1b.jpg",
     "static/media/gn_flag.jpg": "/zekeinternational/static/media/gn_flag.713d0cc0c7b07d1acad9.jpg",
     "index.html": "/zekeinternational/index.html",
-    "main.d53f64e9.css.map": "/zekeinternational/static/css/main.d53f64e9.css.map",
-    "main.ec0deb92.js.map": "/zekeinternational/static/js/main.ec0deb92.js.map",
+    "main.68cb3d64.css.map": "/zekeinternational/static/css/main.68cb3d64.css.map",
+    "main.0d1b877a.js.map": "/zekeinternational/static/js/main.0d1b877a.js.map",
     "787.d845e869.chunk.js.map": "/zekeinternational/static/js/787.d845e869.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53f64e9.css",
-    "static/js/main.ec0deb92.js"
+    "static/css/main.68cb3d64.css",
+    "static/js/main.0d1b877a.js"
   ]
 }
