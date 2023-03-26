@@ -15,7 +15,7 @@ import HeaderAndHeroComponent from "./component/home/header.and.herocomponent";
 import NewsPage from "./page/news.page";
 
 const App = () => {
-  const [pathInfo, setPathInfo] = useState("home");
+  const [pathInfo, setPathInfo] = useState("news");
 
 
 
@@ -58,7 +58,9 @@ const App = () => {
           {/* news content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <NewsPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
-          <FooterPage />
+          {/* <div style={{bottom:'0', position:"absolute"}}> */}
+            <FooterPage />
+        {/* </div> */}
         </div>
       ) : (
         <div>

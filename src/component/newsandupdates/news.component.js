@@ -14,18 +14,52 @@ import n8 from "../../assets/blogs_content/8.pdf";
 
 var params = "#toolbar=0&navpanes=0&scrollbar=0&embedded=0"
 const NewsComponent = () => {
-  const newsCardWidth = "300px"
-  const newsCardHeight = "300px"
+  const newsCardWidth = "50%"
+  const newsCardHeight = "2000px"
 
   return (
     <React.Fragment>
-      <div className="blogMainFrame" >
+      <div style={{ overflow: "scroll" }} >
         <center><h2>News And Updates !</h2></center>
-        <div className="news-card-body" style={{ display: "flex", padding: "30px", justifyContent: "space-between", flexWrap: "wrap" }}>
-          <div className="news-card-body" >
-            <embed src={n1 + params} width={newsCardWidth} height={newsCardHeight} />
+
+        <div style={{ display: "flex", margin: "20px", gap: "20px", height: "500px", justifyContent: "space-between", flexWrap: "wrap", flexDirection: "row" }}>
+
+
+
+
+          <div style={{ width: "550px" }}>
+            <embed src={n1 + params} width="100%" height="100%" />
           </div>
-          <div className="news-card-body" >
+          <div style={{ width: "550px" }}>
+            <embed src={n2 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n3 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n4 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n5 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n6 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n7 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n8 + params} width="100%" height="100%" />
+          </div>
+          <div style={{ width: "550px" }}>
+            <embed src={n4 + params} width="100%" height="100%" />
+          </div>
+
+        </div>
+
+
+
+        {/* <div className="news-card-body" >
             <embed src={n2 + params} width={newsCardWidth} height={newsCardHeight} />
           </div>
           <div className="news-card-body" >
@@ -42,11 +76,10 @@ const NewsComponent = () => {
           </div>
           <div className="news-card-body" >
             <embed src={n7 + params} width={newsCardWidth} height={newsCardHeight} />
-          </div>
-
-        </div>
+          </div> */}
 
       </div>
+
     </React.Fragment>
   );
 };

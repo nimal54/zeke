@@ -12,10 +12,7 @@
 }
 .news-card-body {
   display: flex;
-  flex-direction: column;
-  align-items: start;
   padding: 20px;
-  min-height: 250px;
 }
 .blog_card-container {
   width: 90%;

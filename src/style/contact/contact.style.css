@@ -33,6 +33,14 @@
   box-shadow: -10px -10px 20px rgb(255, 255, 255),
     10px 10px 20px rgba(0, 0, 0, 0.4);
 }
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.tess{
+  /* grid-template-columns: repeat(3, 1fr); */
+}
 .contact_form_innner {
   padding-inline: 2%;
   display: flex;
