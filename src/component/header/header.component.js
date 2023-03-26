@@ -8,7 +8,6 @@ function HeaderComponent(props) {
 
 
   const eventRouter = (path) => {
-    console.log(path);
     props.setPathInfo(path)
     setSlidebar(slidebar ? false : true)
   }

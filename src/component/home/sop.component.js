@@ -65,6 +65,8 @@ const SOPComponent = () => {
       <p className="taglinep item scrollFade">
         We help you write SOPs that never get rejected. If you want your SOPs to stand out, we’re there!
       </p>
+
+      {/* <iframe src="https://docs.google.com/viewer?url=http://www.africau.edu/images/default/sample.pdf&embedded=true" frameborder="0" height="500px" width="40%"></iframe> */}
       </div>
       <div className="screen item scrollFade">
         <div className="innerscreen item scrollFade">
@@ -80,7 +82,7 @@ const SOPComponent = () => {
           {data.errorMsg === "" ? "" : <div><p className="bounsing_errormsg" style={{ color: 'red', fontSize: 'small' }}>{data.errorMsg}</p></div>}
           <div className="screen_meetus item scrollFade">
             <div className="meetus item scrollFade">
-              <button onClick={(e) => sendEmail()}  ><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;</span> Drop a mail</button>
+              <button  onClick={(e) => sendEmail()}  ><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;</span> Drop a mail</button>
               <button onClick={(e) => sendToWhatsapp()}><span><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;</span>Just Whatsapp</button>
             </div>
           </div>

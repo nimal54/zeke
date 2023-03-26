@@ -10,7 +10,13 @@
   padding: 2%;
   box-shadow: 0 5px 4px rgba(128, 128, 128, 0.467);
 }
-
+.news-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  min-height: 250px;
+}
 .blog_card-container {
   width: 90%;
   /* height: 300px; */

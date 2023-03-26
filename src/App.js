@@ -12,6 +12,7 @@ import BlogPage from "./page/blog.page"
 import { Divider } from "@mui/material";
 import CountryListBannerComponent from "./component/country/countryListbanner.component";
 import HeaderAndHeroComponent from "./component/home/header.and.herocomponent";
+import NewsPage from "./page/news.page";
 
 const App = () => {
   const [pathInfo, setPathInfo] = useState("home");
@@ -32,23 +33,31 @@ const App = () => {
         </div>
       ) : pathInfo === "about" ? (
         <div>
-          {/* hero content  */}
+          {/* ab out content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <AboutPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : pathInfo === "contact" ? (
         <div>
-          {/* hero content  */}
+          {/* cntcat content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <ContactPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : pathInfo === "blog" ? (
         <div>
-          {/* hero content  */}
+          {/* blog content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <BlogPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <div style={{bottom:'0', position:"absolute"}}>
+            <FooterPage /></div>
+        </div>
+      ) : pathInfo === "news" ? (
+        <div>
+          {/* news content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <NewsPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <FooterPage />
         </div>
       ) : (

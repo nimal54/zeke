@@ -121,6 +121,11 @@ code {
   pointer-events: none;
 }
 
+iframe::-webkit-scrollbar {
+  display: none; 
+  overflow: hidden;
+}
+
 .scrollFade--visible {
   opacity: 1;
   pointer-events: all;

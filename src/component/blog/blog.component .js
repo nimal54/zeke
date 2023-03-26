@@ -2,17 +2,27 @@ import React from "react";
 import earn_illustration from "../../assets/home/earn.jpg";
 import "../../style/blog/blog.style.css";
 
+import b1 from "../../assets/blogs_content/1.pdf";
+
 import img10 from "../../assets/home/0.jpg";
 import * as contents from "../../utils/content.collections";
-
+var params = "#toolbar=0&navpanes=0&scrollbar=0&embedded=1"
 const BlogComponent = () => {
 
 
   return (
     <React.Fragment>
       <div className="blogMainFrame" >
-        <center><h2>Read. Learn. Repeat!</h2></center>
-        {contents.BLOGCONTENT.map((data, index) =>
+        <center><h2>Read. Learn. Repeat!</h2>
+        <h2>Comming soon...!</h2>
+        <p>Page under maintenance</p>
+</center>
+     <div>
+
+
+      </div>
+       
+        {/* {contents.BLOGCONTENT.map((data, index) =>
           <section class="blog_container">
             <div class="blog_card-container">
               <div
@@ -35,8 +45,9 @@ const BlogComponent = () => {
 
             </div>
           </section>
-        )}
+        )} */}
 
+        
       </div>
 
 

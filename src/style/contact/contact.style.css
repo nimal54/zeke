@@ -9,6 +9,8 @@
 .contact_heading {
   width: 55%;
 }
+
+
 .smallDiv {
   width: 40%;
   height: fit-content;
@@ -56,10 +58,14 @@
 .paddingb4 {
   padding-bottom: 4%;
 }
+
 .btn_snd {
   width: 40%;
-  background-color: var(--secondary_color);
-  color: white;
+  /* background-color: var(--secondary_color);
+  color: white; */
+  font-family: 'Poppins';
+  background-color: var(--session3_button_background);
+  color: var(--session3_button_text);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;

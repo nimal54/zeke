@@ -78,19 +78,23 @@ const ContactComponent = () => {
           <div class="contact_info">
             <div class="contact_info_title">
               <h3>Contact detail</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
-              </p>
+              {/* <p>
+                
+              </p> */}
+              <div className="smallDiv">
+                <br/>
+                <h4>Address</h4>
+                <p>+91 6282345242, +91 8590483366</p>
+              </div>
             </div>
             <div class="social-menu-incontact paddingb4" style={{ display: 'flex', justifyContent: "space-around" }}>
               <div className="smallDiv">
                 <h3>Phone</h3>
-                <p>+91 9876543211</p>
+                <p>+91 6282345242, +91 8590483366</p>
               </div>
               <div className="smallDiv">
                 <h3>Email</h3>
-                <p>zeke@hello.com</p>
+                <p>info@zekeinternational.com</p>
               </div>
             </div>
             <div class="social-menu-incontact">
@@ -126,7 +130,7 @@ const ContactComponent = () => {
         </div>
         <div className="contact_form">
           {/* <div className="contact_sendButton"> */}
-          <p>Fill in to fulfil your abroad dreams!!!</p>
+          <center><p style={{color:"darkgoldenrod"}}>Fill in to fulfil your abroad dreams!!!</p></center>
           {/* </div> */}
           <div className="contact_form_innner paddingb4">
             <input value={data.name} onChange={(e) => saveInputDataToData("name", e.target.value)} type="text" placeholder="Name"></input>
@@ -134,7 +138,7 @@ const ContactComponent = () => {
             <input value={data.phone} onChange={(e) => saveInputDataToData("phone", e.target.value)} type="text" placeholder="Phone"></input>
             <input value={data.country} onChange={(e) => saveInputDataToData("country", e.target.value)} type="text" placeholder="Prefer Country"></input>
             <input value={data.course} onChange={(e) => saveInputDataToData("course", e.target.value)} type="text" placeholder="Prefer Course"></input>
-            <button className="btn_snd" onClick={(e) => sendEmail()}  >Drop a mail</button>
+            <button className=" btn_snd cnt_btn" onClick={(e) => sendEmail()}  >Drop a mail</button>
             <button className="btn_snd" onClick={(e) => sendToWhatsapp()}>Just Whatsapp</button>
           </div>
         </div>
