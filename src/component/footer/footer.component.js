@@ -1,37 +1,52 @@
 import React from "react";
 import "../../style/footer/footer.style.css";
 import * as constants from "../../utils/system.constant";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import * as contents from "../../utils/content.collections";
+import Divider from '@mui/material/Divider';
+
 import Button from "@mui/material/Button";
+import { MinimalEmailSubscribeStyle } from "../../utils/module/MinimalEmailSubscribeStyle.js"
 
 const FooterComponent = () => {
-  
+
+  var socialmediaurls = contents.SOCIALMEDIAURL;
+
+  const getMediaUrl = (media) => {
+    var filteredItems = socialmediaurls.find((item) => item.media === media);
+    return filteredItems.url;
+  };
+
+  const redirectToSocialMedia = (media) => {
+    window.open(getMediaUrl(media), '_blank');
+  }
+
+
 
   return (
     <React.Fragment>
       <div
         style={{
-          bottom: 0,
-          position: "absolute",
-          width: "100%",
+          // bottom: 0,
+          // position: "absolute",
+          // placeItems:'center',
           color: constants.COMMON_COLOR,
         }}
       >
         <div
-          class="footer_container"
-          style={{ backgroundColor: constants.PRIMARY_COLOR }}
+          class="footer_container item scrollFade"
+          style={{ placeItems: 'center' }}
         >
           {/* left  */}
           <div class="footer-left">
-            <h3 style={{ color: constants.COMMON_COLOR }}>
+            <h3>
               <span>{constants.COMPANY_NAME}</span>
             </h3>
             <p class="footer-company-about">
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.Lorem
-              ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod
-              convallis velit, eu auctor lacus vehicula sit amet.
+              We are a group of experienced student counsellors who
+              are eager to help you reach your dreamland easily and happily.
+              We give you proper assistance and guidance in choosing the right
+              course and will make your study abroad dreams true.
+              Keeping the trust alive is our philosophy!
             </p>
           </div>
 
@@ -39,8 +54,16 @@ const FooterComponent = () => {
 
           <div class="footer-center">
             <p>Connect with us</p>
+            <div class="social-menu">
+              <ul>
+                <li><a onClick={(e) => redirectToSocialMedia("facebook")} target="blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("instargam")} target="blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("linkedin")} target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("twitter")}><i class="fab fa-twitter" target="blank"></i></a></li>
+              </ul>
+            </div>
 
-            <div>
+            {/* <div>
               <Button>
                 <i class="fa fa-facebook"></i>
               </Button>
@@ -60,11 +83,12 @@ const FooterComponent = () => {
               <Button>
                 <i class="fa fa-envelope"></i>
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* right  */}
-          <div class="footer-right">
+          {/* <div class="footer-right">
+            <MinimalEmailSubscribeStyle/>
             <Box
               sx={{
                 width: 500,
@@ -72,27 +96,24 @@ const FooterComponent = () => {
               }}
             >
               <h2
+                className="newsletter"
                 style={{
                   color: constants.COMMON_COLOR,
-                  fontWeight: "normal",
-                  fontSize: "medium",
                 }}
               >
                 <i class="fa fa-envelope"></i>&nbsp; Newsletter
               </h2>
               <TextField fullWidth label="example@gmail.com" id="fullWidth" />
             </Box>
-          </div>
+          </div> */}
         </div>
 
         {/* copyright footer */}
-        <div
-          className="footer_session2"
-          style={{ backgroundColor: constants.PRIMARY_COLOR }}
-        >
-          <p style={{ fontSize: "small", textAlign:'center' }}>
-            Copyright &copy; 2022. <span>{window.innerWidth<600?<br/>:''}</span>All Rights Reserved by{" "}
-            {constants.COMPANY_NAME}
+        <div className="footer_session2">
+          <p style={{ fontSize: "small", textAlign: "center" }}>
+            Copyright &copy; 2023.{" "}
+            <span>{window.innerWidth < 600 ? <Divider /> : ""}</span>All Rights
+            Reserved by {constants.COMPANY_NAME}
           </p>
         </div>
       </div>

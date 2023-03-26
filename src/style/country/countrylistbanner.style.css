@@ -1,0 +1,103 @@
+
+.countrybox{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 88%;
+  overflow-x: scroll;
+  
+}
+.countrybox::-webkit-scrollbar {
+  display: none;
+}
+.countrythumbnail{
+  overflow: hidden;
+}
+.arrowButton{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.arrow {
+  border: solid darkgray;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.countrythumbnail{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 65px;
+}
+
+.countryCard {
+  min-width:250px;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("http://www.mit.edu/~gil/pers/ful_can_us_map_lpic.gif"); */
+}
+
+.profile-box {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  
+}
+.profile-box .profile-picture {
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  margin-left: -40px;
+}
+.profile-box .profile-picture img {
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+}
+.profile-cover-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.profile-cover-image img {
+  width: 100%;
+}
+.profile-content {
+  padding-top: 5%;
+  width: 250px;
+  text-align: center;
+  padding-inline: 10px;
+  overflow-wrap: normal;
+  word-wrap: break-word;
+}
+.profile-content p {
+  font-size: medium;
+  padding-inline: 5px;
+}
+.profile-content .socials a {
+  color: #d2d2d2;
+  margin: 0 15px;
+  font-size: small;
+  transform: translateY(4px);
+}
+.profile-content .socials a:hover {
+  color: #aaa;
+  transform: translateY(0);
+}

@@ -1,105 +1,51 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import React, { useEffect, useState } from "react";
 
-import * as constants from "../../utils/system.constant";
+import "../../style/header/header.style.css";
 
-const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+function HeaderComponent(props) {
+  const [slidebar, setSlidebar] = useState(false);
+  const [slidebarWidth, setSlidebarWidth] = useState("0%")
 
-function HeaderComponent() {
-  const { window } = "";
-  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        {constants.COMPANY_NAME}
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText onClick={console.log(item)} primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const eventRouter = (path) => {
+    console.log(path);
+    props.setPathInfo(path)
+    setSlidebar(slidebar ? false : true)
+  }
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar
-        style={{ backgroundColor: constants.PRIMARY_COLOR }}
-        component="nav"
+    <div>
+      <div
+        id="mySidenav"
+        style={{ width: slidebar ? "100%" : "0%" }}
+        class="sidenav"
       >
-        <Toolbar>
-          <IconButton
-            color={constants.COMMON_COLOR}
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon style={{ color: constants.SECONDARY_COLLOR }} />
-          </IconButton>
-          <h3 style={{ flexGrow: 1, fontFamily: "poppins" }}>
-            {constants.COMPANY_NAME}
-          </h3>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: constants.COMMON_COLOR }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          onClick={(e) => setSlidebar(slidebar ? false : true)}
         >
-          {drawer}
-        </Drawer>
-      </Box>
-      <Typography>
-        <h1></h1>
-      </Typography>
-    </Box>
+          &times;
+        </a>
+        <a onClick={(e) => eventRouter("home")}>Home</a>
+        <a onClick={(e) => eventRouter("about")} >About</a>
+        <a onClick={(e) => eventRouter("blog")} >Blogs</a>
+        <a onClick={(e) => eventRouter("contact")}>Contact</a>
+      </div>
+      <h1 href="#" className="logo">
+        <span
+          style={{ fontSize: "30px", cursor: "pointer" }}
+          onClick={() => setSlidebar(slidebar ? false : true)}
+        >
+
+        </span>
+        <div>
+          <span>&nbsp;&nbsp;&#9776; &nbsp;&nbsp;Zeke International</span>
+          <p style={{ textAlign: "left", paddingLeft: "8%", fontSize: "small", fontStyle: "italic", fontWeight: "600", paddingTop: "-10" }}>&nbsp;A go getters hub</p>
+        </div>
+
+      </h1>
+    </div>
   );
 }
 

@@ -7,6 +7,7 @@
   display: inline-flex;
   justify-content: space-around;
   vertical-align: top;
+  background-color: var(--footer_background_color);
 }
 
 /* Footer left */
@@ -19,7 +20,15 @@
 .footer-center {
   width: 15%;
   text-align: center;
+  color: var(--footer_title_color);
   
+}
+.footer-center button:hover{
+  transform: translate(0, -10%);
+    background-color: var(--button_background_color);
+}
+.footer-left h3{
+  color: var(--footer_title_color) ;
 }
 
 .footer-center div{
@@ -35,12 +44,13 @@
 }
 .footer-company-about {
  font-size: small;
+ color:var(--footer_desc_color)
 }
 
 .footer-company-about span {
   margin-bottom: 20px;
 }
-
+/* 
 .footer-center i {
   background-color: #33383b;
   color: white;
@@ -50,24 +60,88 @@
   text-align: center;
   line-height: 42px;
   vertical-align: middle;
+} */
+
+
+.social-menu ul{
+    
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+  font-size: large;
+  line-height: 40px;
+  transition: .3s;
+}
+
+.social-menu ul li .fab:hover{
+  color: var(--button_background_color);
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  transition: .6s;
+  color: var(--footer_desc_color);
+  background-color:#BD8B13;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+  color: var(--button_label_color);
+  background-color: var(--button_background_hover_color);
+}
+
 
 
 .footer_session2{
     justify-content: center;
     margin-bottom: 10px;
     width: 100%;
+    color: var(--footer_title_color);
     display: inline-flex ;
+    background-color: var(--footer_background_color);
     border-top: 1px solid #fff;
 }
+.newsletter{
+  font-size: medium;
+  font-weight: normal;
+}
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 810px) {
 
 	.footer-left, .footer-center, .footer-right, .footer_container{
 		display: block;
 		width: 100%;
+    font-size: xx-small;
 		text-align: center;
 	}
+  .footer-company-about,  .footer-center{
+    font-size: x-small;
+		text-align: center;
+  }
+  .footer-center i {
+    width: 28px;
+    height: 28px;
+    line-height: 32px;
+  }
+  .newsletter {
+    font-size: small;
+  }
+  .footer-right{
+    margin-inline: 10px;
+  }
 
 }
