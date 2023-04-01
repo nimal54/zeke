@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
 
 import FooterPage from "./page/footer.page";
 import HomePage from "./page/home.page";
@@ -13,16 +14,23 @@ import { Divider } from "@mui/material";
 import CountryListBannerComponent from "./component/country/countryListbanner.component";
 import HeaderAndHeroComponent from "./component/home/header.and.herocomponent";
 import NewsPage from "./page/news.page";
+import CountryPage from "./page/country.page";
 
 const App = () => {
-  const [pathInfo, setPathInfo] = useState("news");
+  const [pathInfo, setPathInfo] = useState("home");
 
 
+
+  const topFunction = (media) => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
   return (
 
 
     <div>
+      <button onClick={(e) => topFunction()}  className="scrollToTopBtn" id="scrollToTopBtn" title="Go to top"><i class="fas fa-angle-up" style={{fontSize:"x-large"}}></i></button>
       {pathInfo === "home" ? (
         <div>
           {/* hero content  */}
@@ -62,7 +70,16 @@ const App = () => {
             <FooterPage />
         {/* </div> */}
         </div>
-      ) : (
+      ) : pathInfo === "country" ? (
+        <div>
+          {/* news content  */}
+          <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <CountryPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          {/* <div style={{bottom:'0', position:"absolute"}}> */}
+            {/* <FooterPage /> */}
+        {/* </div> */}
+        </div>
+      ) :(
         <div>
           <center>
             <medium className="bounsing_errormsg">Thanks for choosing <span style={{ color: "blue", fontWeight: "bold" }}>Zeke</span> !!! <br />Please check url</medium>

@@ -12,7 +12,7 @@
 
 
 .smallDiv {
-  width: 40%;
+  width: 50%;
   height: fit-content;
 }
 .contact_heading h2 {
@@ -38,9 +38,7 @@
   text-rendering: optimizeLegibility;
 }
 
-.tess{
-  /* grid-template-columns: repeat(3, 1fr); */
-}
+
 .contact_form_innner {
   padding-inline: 2%;
   display: flex;
@@ -68,9 +66,7 @@
 }
 
 .btn_snd {
-  width: 40%;
-  /* background-color: var(--secondary_color);
-  color: white; */
+  width: 70%;
   font-family: 'Poppins';
   background-color: var(--session3_button_background);
   color: var(--session3_button_text);
@@ -80,6 +76,27 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.share-list {
+  display: flex;
+  flex-direction: row;
+}
+.share-list a {
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.share-list a i {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+a.fb-h {
+  background: #3b5998;
+}
 
 .contact_info_content {
   display: flex;
@@ -87,8 +104,7 @@
   background-color: aquamarine;
 }
 .social-menu-incontact ul {
-  padding: 0;
-  margin: 0;
+  flex-flow: row;
   display: flex;
 }
 
@@ -128,18 +144,23 @@
 
 @media screen and (max-width: 800px) {
   .contact_container {
-    /* padding-inline: 5%; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     place-content: center;
     padding-bottom: 4%;
   }
+  .contact_form_innner{
+    width: 80%;
+  }
   .contact_heading {
     width: 90%;
     display: flex;
     flex-direction: column;
     place-content: center;
+  }
+  .smallDiv{
+    width: 100%;
   }
   .contact_form {
     width: 100%;
@@ -168,7 +189,7 @@
     place-content: center;
   }
   .btn_snd {
-    width: 60%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 415px) {
@@ -183,8 +204,14 @@
     flex-direction: column;
     place-content: center;
   }
+  .smallDiv{
+    width: 100%;
+  }
   .contact_form {
     width: 100%;
+  }
+  .contact_form_innner{
+    width: 80%;
   }
   .contact_form_innner input {
     width: 100%;
@@ -210,6 +237,6 @@
     place-content: center;
   }
   .btn_snd {
-    width: 60%;
+    width: 100%;
   }
 }

@@ -50,13 +50,13 @@ const HomeComponent = (props) => {
       <HowToGetComponent />
 
       {/* CountryListBannerComponent */}
-      <CountryListBannerComponent />
+      <CountryListBannerComponent pathInfo={props.pathInfo} setPathInfo={props.setPathInfo}/>
 
       {/* part time calculator  */}
       <PartTimeCalculator />
 
       {/* blog banner  */}
-      <BlogBannerComponent />
+      {/* <BlogBannerComponent /> */}
 
 
 

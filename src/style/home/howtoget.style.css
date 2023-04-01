@@ -13,6 +13,7 @@
   line-height: 1.75rem;
   font-weight: 600;
   color: var(--session4_title_color);
+  animation: 1.5s ease-out 0s 1 slideFromLeft ;
 }
 .howtoget_contentdiv{
   padding:5%;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "../../style/contact/contact.style.css";
+import * as contents from "../../utils/content.collections";
 
 const ContactComponent = () => {
 
@@ -16,6 +17,18 @@ const ContactComponent = () => {
     var emailrequest = "https://mail.google.com/mail/?view=cm&fs=1&to=" + receiverEmail + "&cc=" + ccReceiverEmail + "&su=" + emailSubject + "&body=" + emailBody
     window.open(emailrequest, '_blank');
     // }
+  }
+
+
+  var socialmediaurls = contents.SOCIALMEDIAURL;
+
+  const getMediaUrl = (media) => {
+    var filteredItems = socialmediaurls.find((item) => item.media === media);
+    return filteredItems.url;
+  };
+
+  const redirectToSocialMedia = (media) => {
+    window.open(getMediaUrl(media), '_blank');
   }
 
   const sendToWhatsapp = () => {
@@ -62,75 +75,50 @@ const ContactComponent = () => {
 
 
   return (
-    <div>
-      <center style={{ paddingBottom: "2%" }}>
-        <h2>
-          Contact
-          <span> Us </span>
-        </h2>
+    <div class=" paddingb4">
+      <center style={{ paddingBottom: "4%", paddingInline: "3%" }}>
+        <h2> Contact <span> Us </span> </h2>
         <medium>
-          We’re here near you just a tap away. Dial us, Mail Us or even letters will do!.
+          <var>We’re here near you just a tap away. Dial us, Mail Us or even letters will do!.</var>
         </medium>
       </center>
-      <div class="contact_container">
-        <div className="contact_heading">
+      <div class="contact_container paddingb4">
+        <div className="contact_heading paddingb4">
 
           <div class="contact_info">
-            <div class="contact_info_title">
+            <div class="contact_info_title paddingb4" >
               <h3>Contact detail</h3>
-              {/* <p>
-                
-              </p> */}
-              <div className="smallDiv">
-                <br/>
+              <div className="smallDiv" >
+                <br />
                 <h4>Address</h4>
-                <p>+91 6282345242, +91 8590483366</p>
-              </div>
-            </div>
-            <div class="social-menu-incontact paddingb4" style={{ display: 'flex', justifyContent: "space-around" }}>
-              <div className="smallDiv">
-                <h3>Phone</h3>
-                <p>+91 6282345242, +91 8590483366</p>
+                <small>First Floor, Chittezhath Tower,Thammanam - Pullepady Road, CBI Junction,Kathrikadavu, Kochi, Kerala 682017</small>
               </div>
               <div className="smallDiv">
-                <h3>Email</h3>
-                <p>info@zekeinternational.com</p>
+                {/* <br /> */}
+                <h4>Phone</h4>
+                <small>+91 6282345242, +91 85904833667</small>
+              </div>
+              <div className="smallDiv paddingb4">
+                {/* <br /> */}
+                <h4>Email</h4>
+                <small>info@zekeinternational.com</small>
               </div>
             </div>
-            <div class="social-menu-incontact">
+
+            <div class="social-menu paddingb4">
               <ul>
-                <li>
-                  <a href="#" target="blank">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="blank">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="blank">
-                    <i class="fab fa-telegram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
+                <li><a onClick={(e) => redirectToSocialMedia("facebook")} target="blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("instargam")} target="blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("linkedin")} target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a onClick={(e) => redirectToSocialMedia("whatsapp")}><i class="fab fa-whatsapp" target="blank"></i></a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="contact_form">
+        <div className="contact_form paddingb4">
           {/* <div className="contact_sendButton"> */}
-          <center><p style={{color:"darkgoldenrod"}}>Fill in to fulfil your abroad dreams!!!</p></center>
+          <center><p style={{ color: "darkgoldenrod" }}>Fill in to fulfil your abroad dreams!!!</p></center>
+          <hr />
           {/* </div> */}
           <div className="contact_form_innner paddingb4">
             <input value={data.name} onChange={(e) => saveInputDataToData("name", e.target.value)} type="text" placeholder="Name"></input>

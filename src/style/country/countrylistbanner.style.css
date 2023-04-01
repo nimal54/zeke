@@ -7,6 +7,11 @@
   overflow-x: scroll;
   
 }
+.animation_listcountrygrid{
+  /* animation: 5s ease-out 0s 1 slideFromLeft ; */
+  /* animation: 3s ease-in 1s slideFromLeftX; */
+  
+}
 .countrybox::-webkit-scrollbar {
   display: none;
 }
