@@ -48,7 +48,7 @@ const CountryListBannerComponent = (props) => {
         {
             coverPhoto: c4,
             icon: f4,
-            head: "Sweden",
+            head: "France",
             subhead: "Millions have chosen to move Down Under to further their education and career prospects,.",
         },
         {
@@ -80,9 +80,10 @@ const CountryListBannerComponent = (props) => {
     }, [decrement])
 
     
-    const eventRouter = (path) => {
+    const eventRouter = (path, cnt) => {
         console.log(path);
         props.setPathInfo(path)
+        props.setSelectedCountry(cnt)
         let inputs = document.getElementById('menu-btn');
         inputs.checked = false;
         return true
@@ -114,7 +115,7 @@ const CountryListBannerComponent = (props) => {
                                     <h2 style={{ fontSize: "medium" }}>{data.head}</h2>
                                     <p><small>{data.subhead}</small></p>
                                     <div class="socials">
-                                        <a  onClick={(e) => eventRouter("country")} style={{ textDecorationLine: 'none', color: "blue" }} href="#"><i class="fa fa-leanpub"></i>  Learn More</a>
+                                        <a  onClick={(e) => eventRouter("country", data.head)} style={{ textDecorationLine: 'none', color: "blue" }} href="#"><i class="fa fa-leanpub"></i>  Learn More</a>
                                     </div>
                                 </div>
                             </div>

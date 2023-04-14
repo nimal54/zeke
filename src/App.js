@@ -26,6 +26,8 @@ const App = () => {
     document.documentElement.scrollTop = 0;
   }
 
+  const [selectedCountry, setSelectedCountry] = useState('CANADA')
+
   return (
 
 
@@ -35,7 +37,7 @@ const App = () => {
         <div>
           {/* hero content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
-          <HomePage pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <HomePage setSelectedCountry={setSelectedCountry} selectedCountry={selectedCountry} pathInfo={pathInfo} setPathInfo={setPathInfo} />
           <Testimonial />
           <FooterPage />
         </div>
@@ -72,12 +74,9 @@ const App = () => {
         </div>
       ) : pathInfo === "country" ? (
         <div>
-          {/* news content  */}
           <HeaderAndHeroComponent pathInfo={pathInfo} setPathInfo={setPathInfo} />
-          <CountryPage pathInfo={pathInfo} setPathInfo={setPathInfo} />
-          {/* <div style={{bottom:'0', position:"absolute"}}> */}
-            {/* <FooterPage /> */}
-        {/* </div> */}
+          <CountryPage selectedCountry={selectedCountry} pathInfo={pathInfo} setPathInfo={setPathInfo} />
+          <FooterPage />
         </div>
       ) :(
         <div>
