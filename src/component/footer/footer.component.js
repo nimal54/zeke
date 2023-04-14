@@ -4,6 +4,10 @@ import * as constants from "../../utils/system.constant";
 import * as contents from "../../utils/content.collections";
 import Divider from '@mui/material/Divider';
 
+
+import zi_logo from "../../assets/zi_logo.png";
+
+
 import Button from "@mui/material/Button";
 import { MinimalEmailSubscribeStyle } from "../../utils/module/MinimalEmailSubscribeStyle.js"
 
@@ -39,7 +43,7 @@ const FooterComponent = () => {
           {/* left  */}
           <div class="footer-left">
             <h3>
-              <span>{constants.COMPANY_NAME}</span>
+              <span><img src={zi_logo} style={{ width: "50px", height: "35px" }}></img>{constants.COMPANY_NAME}</span>
             </h3>
             <p class="footer-company-about">
               We are a group of experienced student counsellors who

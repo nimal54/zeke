@@ -48,7 +48,7 @@ const HeaderAndHeroComponent = (props) => {
         <div >
             <header class="main-header " id="header_id" style={{ zIndex: "20" }}>
                 <div class="logo" >
-                    <img src={zi_logo} style={{ width: "30px", height: "30px" }}></img>
+                    <img src={zi_logo} style={{ width: "15%", height: "8%" }}></img>
                     <h1 style={{ fontFamily: "'Engagement', cursive;" }}>{constants.COMPANY_NAME}<br />
                         <span style={{ fontWeight: "400", color: "white", textShadow: 'none', fontSize: "small", textAlign: "right" }}>A Go Getters Hub</span></h1>
                 </div>
@@ -70,6 +70,9 @@ const HeaderAndHeroComponent = (props) => {
                     </li>
                     <li class="nav-link">
                         <a onClick={(e) => eventRouter("contact")}>Contact</a>
+                    </li>
+                    <li class="nav-link">
+                        <a onClick={(e) => eventRouter("news")}>News & Updates</a>
                     </li>
                 </ul>
             </header>

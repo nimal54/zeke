@@ -8,7 +8,8 @@ import img3 from "../../assets/home/3.jpg";
 import img4 from "../../assets/home/4.jpg";
 import * as contents from "../../utils/content.collections";
 
-const HowToGetComponent = () => {
+
+const HowToGetComponent = (props) => {
 
   var socialmediaurls = contents.SOCIALMEDIAURL;
   const isTrue = (index) => {
@@ -26,17 +27,47 @@ const HowToGetComponent = () => {
   const redirectToSocialMedia = (media) => {
     window.open(getMediaUrl(media), '_blank');
   }
+  const eventRouter = (path) => {
+    console.log(path);
+    props.setPathInfo(path)
+    let inputs = document.getElementById('menu-btn');
+    inputs.checked = false;
+    return true
+}
 
   return (
     <div>
       <div className="howtoget">
         <h3 className="howtogettitle">How to get Zeke ?</h3>
         <center>
-          <p>Fly the Zeke way!!! How we help you to make the journey easy.</p>  
+          <p>Fly the Zeke way!!! How we help you to make the journey easy.</p>
         </center>
-        <br/><br/>
+        <br /><br />
+        {contents.HOW_TO_GET_ZEKE.map((data, index) =>
 
-        {window.innerWidth > 450 ? (
+          <div className="countryBody">
+            <section class="about section bd-container" id="about">
+              <div class="about__container  bd-grid">
+                <div class="eclipsecurvecut">
+                  <img src={img_arr[index]} alt="" class="about__img eclipsecurvecutinside" />
+                </div>
+                <div class="about__data">
+                  {/* <span class="section-subtitle about__initial">About us</span> */}
+                  <h2 class="section-title about__initial">{data.head}</h2>
+                  <p class="about__description">{data.subhead}</p>
+                  <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get In Touch With Us</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} class="cs_button">Just Whatsapp</a></div>
+                  </div>
+              </div>
+            </section>
+            {/* <div class="socialmedia_btns">
+                          <i onClick={(e) => redirectToSocialMedia("facebook")} class="icons_btns fab fa-facebook-f"></i>
+                          <i onClick={(e) => redirectToSocialMedia("whatsapp")} class="icons_btns fab fa-whatsapp"></i>
+                          <i onClick={(e) => redirectToSocialMedia("instargam")} class="icons_btns fab fa-instagram"></i>
+                          <i onClick={(e) => redirectToSocialMedia("linkedin")} class="icons_btns fab fa-linkedin"></i>
+                        </div> */}
+          </div>
+        )}
+        {/* {window.innerWidth > 450 ? (
           <div className="howtoget_contentdiv">
             {contents.HOW_TO_GET_ZEKE.map((data, index) =>
               data.firstposition ? (
@@ -121,7 +152,7 @@ const HowToGetComponent = () => {
               </div>
             ))}
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

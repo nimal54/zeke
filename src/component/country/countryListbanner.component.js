@@ -16,7 +16,7 @@ import f5 from "../../assets/country/banner/gn_flag.jpg"
 
 
 
-const CountryListBannerComponent = () => {
+const CountryListBannerComponent = (props) => {
     const [increment, setIncrement] = useState(true)
     const [decrement, setDecrement] = useState(true)
 
@@ -48,7 +48,7 @@ const CountryListBannerComponent = () => {
         {
             coverPhoto: c4,
             icon: f4,
-            head: "Sweden",
+            head: "France",
             subhead: "Millions have chosen to move Down Under to further their education and career prospects,.",
         },
         {
@@ -79,13 +79,23 @@ const CountryListBannerComponent = () => {
 
     }, [decrement])
 
+    
+    const eventRouter = (path, cnt) => {
+        console.log(path);
+        props.setPathInfo(path)
+        props.setSelectedCountry(cnt)
+        let inputs = document.getElementById('menu-btn');
+        inputs.checked = false;
+        return true
+    }
+
 
 
 
     return (
 
-        <div>
-            <h3 className="howtogettitle item scrollFade">Our Services at ...</h3>
+        <div className="animation_listcountrygrid scrollFade">
+            <h3 className="howtogettitle item">Our Services at ...</h3>
             <center>
                 <h4 style={{ color: "grey" }}>Choose your country and we’re here to make it happen!.</h4>
 
@@ -105,7 +115,7 @@ const CountryListBannerComponent = () => {
                                     <h2 style={{ fontSize: "medium" }}>{data.head}</h2>
                                     <p><small>{data.subhead}</small></p>
                                     <div class="socials">
-                                        <a style={{ textDecorationLine: 'none', color: "blue" }} href="#"><i class="fa fa-leanpub"></i>  Learn More</a>
+                                        <a  onClick={(e) => eventRouter("country", data.head)} style={{ textDecorationLine: 'none', color: "blue" }} href="#"><i class="fa fa-leanpub"></i>  Learn More</a>
                                     </div>
                                 </div>
                             </div>

@@ -47,16 +47,16 @@ const HomeComponent = (props) => {
       <SOPComponent />
 
       {/* how to get  */}
-      <HowToGetComponent />
+      <HowToGetComponent pathInfo={props.pathInfo} setPathInfo={props.setPathInfo} />
 
       {/* CountryListBannerComponent */}
-      <CountryListBannerComponent />
+      <CountryListBannerComponent setSelectedCountry={props.setSelectedCountry} pathInfo={props.pathInfo} setPathInfo={props.setPathInfo}/>
 
       {/* part time calculator  */}
       <PartTimeCalculator />
 
       {/* blog banner  */}
-      <BlogBannerComponent />
+      {/* <BlogBannerComponent /> */}
 
 
 
