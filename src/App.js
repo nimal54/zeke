@@ -20,7 +20,6 @@ const App = () => {
   const [pathInfo, setPathInfo] = useState("home");
 
 
-
   const topFunction = (media) => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

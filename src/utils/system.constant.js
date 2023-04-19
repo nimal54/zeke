@@ -7,7 +7,7 @@ export const COMMON_COLOR = '#F0EBE3'
 // #222232;
 
 // font 
-export const DEFAULT_FONT = 'Poppins'
+export const DEFAULT_FONT = "Source Sans Pro"
 
 //variables
 export const COMPANY_NAME = 'Zeke International'

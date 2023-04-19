@@ -33,7 +33,7 @@ const HowToGetComponent = (props) => {
     let inputs = document.getElementById('menu-btn');
     inputs.checked = false;
     return true
-}
+  }
 
   return (
     <div>
@@ -46,6 +46,7 @@ const HowToGetComponent = (props) => {
         {contents.HOW_TO_GET_ZEKE.map((data, index) =>
 
           <div className="countryBody">
+
             <section class="about section bd-container" id="about">
               <div class="about__container  bd-grid">
                 <div class="eclipsecurvecut">
@@ -56,15 +57,19 @@ const HowToGetComponent = (props) => {
                   <h2 class="section-title about__initial">{data.head}</h2>
                   <p class="about__description">{data.subhead}</p>
                   <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get In Touch With Us</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} class="cs_button">Just Whatsapp</a></div>
+                  <div class="btn_wrap " style={{ margin:"3%", display:"flex", justifyContent:"center"}}>
+                  <span className=" test_btn span_share">Share</span>
+                  <div class=" socialmedia_btns">
+                    <i onClick={(e) => redirectToSocialMedia("facebook")} class="icons_btns fab fa-facebook-f"></i>
+                    <i onClick={(e) => redirectToSocialMedia("whatsapp")} class="icons_btns fab fa-whatsapp"></i>
+                    <i onClick={(e) => redirectToSocialMedia("instargam")} class="icons_btns fab fa-instagram"></i>
+                    <i onClick={(e) => redirectToSocialMedia("linkedin")} class="icons_btns fab fa-linkedin"></i>
                   </div>
+                  </div>
+                </div>
+
               </div>
             </section>
-            {/* <div class="socialmedia_btns">
-                          <i onClick={(e) => redirectToSocialMedia("facebook")} class="icons_btns fab fa-facebook-f"></i>
-                          <i onClick={(e) => redirectToSocialMedia("whatsapp")} class="icons_btns fab fa-whatsapp"></i>
-                          <i onClick={(e) => redirectToSocialMedia("instargam")} class="icons_btns fab fa-instagram"></i>
-                          <i onClick={(e) => redirectToSocialMedia("linkedin")} class="icons_btns fab fa-linkedin"></i>
-                        </div> */}
           </div>
         )}
         {/* {window.innerWidth > 450 ? (

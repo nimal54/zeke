@@ -5,7 +5,7 @@
 	width: 70%;
 	padding: 2%;
 	margin: auto;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
     margin-bottom: 4%;
 }
 
@@ -13,13 +13,13 @@
 	color: white;
 	text-align: right;
 	width: 45%;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
 	margin: auto;
 }
 
 .newsText h1 {
 	font-weight: 600;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
 }
 
 .newsText img {
@@ -35,7 +35,7 @@
 .maintitle_newsletter{
     font-size: x-large;
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
     color:var(--secondary_font_color)
 }
 
@@ -45,7 +45,7 @@ form {
 	text-align: left;
 	color: var(--secondary_font_color);
 	font-size: 1rem;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
 }
 
 .input-field {
@@ -83,7 +83,7 @@ form {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-    font-family: 'Poppins';
+    font-family:  "Montserrat",serif;
 }
 @media screen and (max-width: 800px) {
     .newsletter {

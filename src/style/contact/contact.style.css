@@ -54,7 +54,7 @@
   border-width: 0px;
   border-bottom: #3b599952;
   border-style: solid;
-  font-family: "Poppins";
+  font-family: "Montserrat",serif;
   font-size: 0.95em;
 }
 
@@ -67,7 +67,7 @@
 
 .btn_snd {
   width: 70%;
-  font-family: 'Poppins';
+  font-family:  "Montserrat",serif;
   background-color: var(--session3_button_background);
   color: var(--session3_button_text);
   padding: 14px 20px;

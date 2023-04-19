@@ -23,9 +23,9 @@
 }
 
 .hero_joinus button{
-  background-color: #1C4F4A;
+  background-color: var(--session2_morebutton_background_color);
   color: white;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-weight: 500;
 }
 .hero_joinus button:hover{
@@ -66,7 +66,7 @@
 .hero-text p {
   color: var(--hero_tagline_color);
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: "Montserrat",serif;
 }
 .temp {
   height: 110vh;
@@ -78,7 +78,8 @@
   text-decoration: none;
   font-size: medium;
   font-family: 'Averia Libre', cursive;
-  color: var(--header_nav_btn_color);
+  color:#1C4F4A;
+
 }
 .main-header {
   position: fixed;
@@ -105,7 +106,7 @@
 .main-header .nav-links .nav-link a:hover {
   font-weight: bolder;
   background-color: white;
-  color: #1C4F4A;
+  color: var(--header_nav_btn_color);
   border-radius: 50px;
   padding: 10px;
   padding-inline: 25px;

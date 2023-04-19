@@ -94,7 +94,7 @@
   text-align: center;
   transition: .6s;
   color: var(--footer_desc_color);
-  background-color:#BD8B13;
+  background:linear-gradient(55deg, #0BB0BC 0%, #2375E1 100%);
   box-shadow: 0 5px 4px rgba(0,0,0,.5);
 }
 

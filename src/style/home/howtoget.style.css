@@ -174,22 +174,24 @@ h4{
           align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 100px;
-  height: 30px;
-  background-color: #1C4F4A;
-  color:#BD8B13;
+   /* width: 100px;
+  height: 30px; 
+  background-color: #1C4F4A; */
+  color:#07D078;
   border-radius: 80px;
+  opacity: 1;
   padding: 0 18px;
-  will-change: transform;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  animation: slideFromTop  1s  infinite alternate;
+  /* will-change: transform; */
+  /* -webkit-transition: all .2s ease-in-out; */
+  /* transition: all 2s ease-in-out infinte; */
 }
 
 
 .btn_wrap:hover {
-  /* transition-delay: .4s; */
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1)
+  transition-delay: .4s;
+  /* -webkit-transform: scale(1.1);*/
+          transform: scale(1.1) 
 }
 
 .icons_btns {
@@ -197,11 +199,11 @@ h4{
   font-size: medium;
   color: #BD8B13;
   padding: 5px;
-  will-change: transform;
+  /* will-change: transform;
   -webkit-transform: scale(.1);
           transform: scale(.1);
   -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all .3s ease; */
 }
 .test_btn{
   /* animation: fadeinfadeout 2s infinite; */
@@ -223,9 +225,8 @@ h4{
   background-color: var(--text_button_background);;
   padding: 0 18px;
   opacity: 1;
-  -webkit-transition: all 1.2s ease;
-  transition: all 1.2s ease;
-  animation: colorchanger 3s infinite ;
+  animation: fadeIn 5s infinite alternate;
+  /* transition: all 1.2s ease; */
 }
 
 .socialmedia_btns {
@@ -237,8 +238,8 @@ h4{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
-  height: 64px;
+  width: 150px;
+  height: 30px;
   border-radius: 80px;
 }
 

@@ -6,7 +6,7 @@
 }
 .innerscreen {
   width: 75%;
-  background-color: var(--footer_background_color);
+  background:linear-gradient(55deg, #0BB0BC 0%, #2375E1 100%) !important;
   border-radius: 10px;
   box-shadow: -10px -10px 20px rgb(255, 255, 255),
     10px 10px 20px #3C6255;
@@ -14,7 +14,7 @@
   padding: 2%;
 }
 .innerscreen h2{
-  color:var(--session3_title_color) ;
+  color:var(--sesion2_boxbackground_color) ;
 }
 .innerscreen p{
   color:var(--session3_tagline_color);
@@ -44,7 +44,7 @@
   background-color: var(--session3_background_color);
   border-bottom: #ffb03041;
   border-style: solid;
-  font-family: "Poppins";
+  font-family: "Montserrat",serif;
   font-size: 0.95em;
 }
 .login input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -73,7 +73,7 @@
   text-align: center;
   cursor: pointer;
   width: 30%;
-  font-family: 'Poppins';
+  font-family:  "Montserrat",serif;
   background-color: var(--session3_button_background);
   color: var(--session3_button_text);
   font-weight: 400;

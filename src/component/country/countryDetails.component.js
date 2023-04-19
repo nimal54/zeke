@@ -49,14 +49,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c1} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     Canada, the land of maple leaves, scenic landscapes, and incredible opportunities! Canada is a country known for its natural beauty, diverse culture, and welcoming people. It's no wonder that Canada has consistently ranked among the top study-abroad destinations in the world!
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
                             <br></br><br></br>Studying in Canada is an experience like no other. From the vibrant cities to the breathtaking wilderness, Canada offers a unique blend of modernity and nature that is sure to captivate any student. With world-class universities and colleges, Canada provides a top-notch education system that prepares students for a successful future.<br /><br />
                             There are many reasons why Canada is a popular destination for international students to pursue their education. Here are some of the top reasons to study in Canada:<br></br>
                             <ol>
@@ -91,14 +91,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c3} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     Welcome to the land of Shakespeare, the Beatles, and afternoon tea! The United Kingdom (UK) is a fascinating and diverse country that offers international students an exceptional educational experience. From its world-renowned universities to its vibrant cultural scene, the UK is an ideal destination for students who want to broaden their horizons and experience life in one of the most dynamic and cosmopolitan countries in the world
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
                             <br></br><br></br>There are many compelling reasons to consider studying in the United Kingdom. Here are some of the top reasons:<br></br>
                             <ol>
                                 1. High-quality education: The UK has a reputation for providing high-quality education, with rigorous academic standards and a focus on research and innovation. Students who study in the UK can expect to receive an excellent education that will prepare them for success in their chosen fields.
@@ -129,14 +129,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c0} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     Welcome to the land down under - Australia, where adventure and education come together in perfect harmony. With its warm climate, breathtaking landscapes, and diverse culture, Australia is a destination that appeals to students from all over the world.
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
                             <br></br><br></br>From the vibrant cities of Sydney and Melbourne to the laid-back beaches of the Gold Coast and Byron Bay, Australia offers a unique blend of urban and natural environments that create a perfect backdrop for students to pursue their academic dreams.<br></br><br></br>
                             Australia's world-class universities and colleges offer a wide range of programs, including business, engineering, arts, and sciences, all taught by expert faculty in state-of-the-art facilities. Studying in Australia provides students with a high-quality education that is recognized globally, ensuring that they are well-prepared to meet the challenges of the modern workplace.<br></br><br></br>
                             There are many reasons why studying in Australia can be a great choice. Here are some of the top reasons:
@@ -176,14 +176,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c2} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     New Zealand, the land of the long white cloud, is a country that never ceases to amaze. With breathtaking landscapes, friendly locals, and world-class universities, New Zealand has emerged as a top study abroad destination for students from around the globe.
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
                             <br></br><br></br>Imagine studying in a country where snow-capped mountains, pristine beaches, and dense forests are just a short drive away from your university campus. New Zealand offers a unique blend of adventure and academic excellence, providing students with a once-in-a-lifetime experience that will shape their future in countless ways.
                             <br /><br />Why should you choose New Zealand for study abroad programme?
                             <ol>
@@ -222,14 +222,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c5} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     Welcome to Germany, a country that seamlessly blends rich history with modern innovation. From picturesque castles to bustling cities, Germany has something to offer for everyone. If you're a student looking for an exceptional study abroad experience, look no further than Germany.
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
                             <br></br><br></br>Home to some of the world's top-ranked universities, Germany is a leading destination for international students seeking a top-quality education. You'll have the opportunity to learn from renowned professors and industry experts, gaining invaluable knowledge and skills that will set you apart in today's competitive job market.
                             <br /><br />Germany is also a vibrant and dynamic country, offering a diverse range of cultural experiences. Whether you're exploring the vibrant art scene in Berlin, sampling the delicious cuisine in Munich, or hiking through the stunning countryside, you'll be immersed in a rich and diverse culture. Germany is a country that values and celebrates diversity, making it an ideal destination for students from all backgrounds.
                             <br /><br />Top Reasons to Study in Germany:
@@ -249,14 +249,14 @@ const CountryDetailsComponent = (props) => {
                         <div class="about__container  bd-grid">
                             <img src={c4} alt="" class="about__img" />
                             <div class="about__data">
-                                <h2 class="section-title about__initial"></h2>
-                                <p class="about__description">
+                                <h2 class="hpul section-title about__initial"></h2>
+                                <p class=" hpul  about__description">
                                     Welcome to France, the land of romance, exquisite cuisine, and a rich cultural heritage! As a study abroad destination, France offers a unique blend of academic excellence, cutting-edge research, and an unparalleled quality of life.
                                 </p>
                                 <div style={{ display: 'flex', justifyContent: "space-evenly" }}><a href="#" onClick={(e) => eventRouter("contact")} target="blank" class="cs_button">Get in touch</a><a href="#" onClick={(e) => redirectToSocialMedia("whatsapp")} target="blank" class="cs_button">Just Whatsapp</a></div>
                             </div>
                         </div>
-                        <p class="about__description">
+                        <p class=" hpul  about__description">
 
                             <br></br>
                             France is home to some of the world's oldest and most prestigious universities, including Sorbonne University, École Normale Supérieure, and Université Paris-Saclay. With a strong focus on research, these institutions offer a wide range of programs in fields such as science, engineering, humanities, and social sciences. Students who choose to study in France will have access to world-class facilities, expert faculty, and a vibrant academic community that encourages intellectual curiosity and creativity.<br></br><br></br><br></br>

@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
 .hero-text p {
   color: var(--hero_joinbutton_txt_color);
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family:  "Montserrat",serif;
   
 }
 .joinus button {

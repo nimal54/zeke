@@ -49,8 +49,8 @@ const HeaderAndHeroComponent = (props) => {
             <header class="main-header " id="header_id" style={{ zIndex: "20" }}>
                 <div class="logo" >
                     <img src={zi_logo} style={{ width: "15%", height: "8%" }}></img>
-                    <h1 style={{ fontFamily: "'Engagement', cursive;" }}>{constants.COMPANY_NAME}<br />
-                        <span style={{ fontWeight: "400", color: "white", textShadow: 'none', fontSize: "small", textAlign: "right" }}>A Go Getters Hub</span></h1>
+                    <h1 style={{ fontFamily: "Montserrat,serif" }}>{constants.COMPANY_NAME}<br />
+                        <span style={{ fontWeight: "400", color: "whitesmoke", textShadow: 'none', fontSize: "small", textAlign: "right" }}>A Go Getters Hub</span></h1>
                 </div>
 
                 <input type="checkbox" class="menu-btn" id="menu-btn" />

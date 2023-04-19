@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 
 .countryBody{
   margin: var(--header-height) 0 0 0;
@@ -8,7 +8,7 @@
   color: var(--text-color);
   line-height: 1.6;
 }
-h1,h2,h3,p,ul{
+.hpul{
   margin: 0;
 }
 .eclipsecurvecut{
@@ -105,7 +105,7 @@ a{
 
 
 @media screen and (min-width: 768px){
-  body{
+  .countryBody{
     margin: 0;
   }
 
